@@ -1,5 +1,9 @@
 {
   "About": "About",
   "Lang": "Lang",
-  "Main": "Main"
+  "Main": "Main",
+  "Page not found": "Page not found",
+  "Refresh page": "Refresh page",
+  "Throw Error": "Throw Error",
+  "Unexpected Error Occurred": "Unexpected Error Occurred"
 }

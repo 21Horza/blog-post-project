@@ -1,5 +1,9 @@
 {
-  "About": "About",
-  "Lang": "Lang",
-  "Main": "Main"
+  "About": "О сайте",
+  "Lang": "Язык",
+  "Main": "Главная",
+  "Page not found": "Страница не найдена",
+  "Refresh page": "Refresh page",
+  "Throw Error": "Throw Error",
+  "Unexpected Error Occurred": "Unexpected Error Occurred"
 }
