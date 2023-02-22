@@ -1,3 +1,5 @@
+/* eslint-disable i18next/no-literal-string */
+/* eslint-disable max-len */
 import React from 'react';
 
 import { Button } from './Button';
