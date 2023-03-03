@@ -7,7 +7,7 @@ import { BuildOptions } from './types/config';
 export function buildPlugins({ paths, isDev }: BuildOptions): webpack.WebpackPluginInstance[] {
     const plugins = [
         new HTMLWebpackPlugin({
-            template: paths.html,
+            template: paths.html, // html template
         }),
         new webpack.ProgressPlugin(),
         new MiniCssExtractPlugin({

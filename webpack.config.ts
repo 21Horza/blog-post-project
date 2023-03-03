@@ -5,9 +5,13 @@ import { BuildEnv, BuildPaths } from './config/build/types/config';
 
 export default (env: BuildEnv) => {
     const paths: BuildPaths = {
+        // App start point
         entry: path.resolve(__dirname, 'src', 'index.tsx'),
+        // where we put our built project
         build: path.resolve(__dirname, 'build'),
+        // i
         html: path.resolve(__dirname, 'public', 'index.html'),
+        // i
         src: path.resolve(__dirname, 'src'),
     };
 

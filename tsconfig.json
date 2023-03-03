@@ -1,17 +1,34 @@
+// to work with TS in project
 {
     "compilerOptions": {
+        // where to build the project
         "outDir": "./dist/",
+        // do not allow any type
+        // the type has to be explicit
         "noImplicitAny": true,
         "module": "ESNext",
+        // specification to be compiled to (to support more browsers)
         "target": "es5",
+        // allows to work with react & don't need to import React in each file
         "jsx": "react-jsx",
+        // allows compiler to work with not only ts, but also js
         "allowJs": true,
+        // defines imports node(80-90%) or classic
         "moduleResolution": "node",
+        // for absolute imports
         "baseUrl": ".",
         "paths": {
             "*": ["./src/*"]
         },
+        // esModuleInterop allows to work with packages
+        // that uses common js as with usual packages with the help of import (require() module.export) = common js
         "esModuleInterop": true,
+        // if some library doesn't have default import,
+        // loaders such as ts-loader or babel-loader autocreates them
+        // instead of
+        // import * as React from 'react';
+        // we can write
+        // import React from 'react';
         "allowSyntheticDefaultImports": true
     },
     "ts-node": {

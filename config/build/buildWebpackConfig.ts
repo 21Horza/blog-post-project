@@ -11,6 +11,7 @@ export function buildWebpackConfig(options: BuildOptions): webpack.Configuration
     return {
         mode,
         entry: paths.entry,
+        // where we put our built project
         output: {
             filename: '[name].[contenthash].js',
             path: paths.build,
@@ -21,7 +22,7 @@ export function buildWebpackConfig(options: BuildOptions): webpack.Configuration
             rules: buildLoaders(options),
         },
         resolve: buildResolvers(options),
-        devtool: options.isDev ? 'inline-source-map' : undefined,
+        devtool: options.isDev ? 'inline-source-map' : undefined, // inline-source-map is to see where errors are
         devServer: options.isDev ? buildDevServer(options) : undefined,
     };
 }
