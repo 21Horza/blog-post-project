@@ -1,15 +1,18 @@
 {
   "About": "About",
+  "Auth form": "",
   "Enter password": "Enter password",
   "Enter username": "Enter username",
   "Lang": "Lang",
   "Log in": "Log in",
+  "Log out": "",
   "Main": "Main",
   "Page not found": "Page not found",
   "Refresh page": "Refresh page",
   "Throw Error": "Throw Error",
   "Toggle": "Toggle",
   "Unexpected Error Occurred": "Unexpected Error Occurred",
+  "You entered wrong login or password": "You entered wrong login or password",
   "decrement": "decrement",
   "increment": "increment"
 }
