@@ -1,9 +1,10 @@
 import { StoreProvider } from './ui/StoreProvider';
-import { createReduxStore } from './config/store';
+import { createReduxStore, AppDispatch } from './config/store';
 import type { StateSchema } from './config/StateSchema';
 
 export {
     StoreProvider,
     createReduxStore,
+    AppDispatch,
     StateSchema, // types can be used from the upper layer as an exception
 };

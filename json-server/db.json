@@ -1,29 +1,38 @@
 {
   "posts": [
     {
-      "id": 1,
+      "id": "1",
       "title": "json-server",
-      "userId": 1
+      "userId": "1"
     },
     {
-      "id": 2,
+      "id": "2",
       "title": "json-server",
-      "userId": 2
+      "userId": "2"
     }
   ],
   "comments": [
     {
-      "id": 1,
+      "id": "1",
       "body": "some comment",
-      "postId": 1
+      "postId": "1"
     }
   ],
   "users": [
     {
-      "id": 1,
+      "id": "1",
       "username": "admin",
       "password": "123"
     }
   ],
-  "profile": { "name": "typicode" }
+  "profile": { 
+    "first": "Horza",
+    "lastname": "Go",
+    "age": "25",
+    "currency": "Go",
+    "country": "Russia",
+    "city": "Ekaterinburg",
+    "username": "admin",
+    "avatar": "https://espicture.ru/800/600/https/yt3.ggpht.com/a/AATXAJzio-2-eywg3le3ByF0d2diffaTAX3USMcvtw=s900-c-k-c0xffffffff-no-rj-mo"
+  }
 }
