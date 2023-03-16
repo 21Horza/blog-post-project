@@ -13,6 +13,7 @@
         "jsx": "react-jsx",
         // allows compiler to work with not only ts, but also js
         "allowJs": true,
+        "strict": true,
         // defines imports node(80-90%) or classic
         "moduleResolution": "node",
         // for absolute imports
@@ -40,5 +41,5 @@
         "./config/jest/setupTests.ts",
         "./src/**/*.ts",
         "./src/**/*.tsx"
-    ]
+, "src/entities/Profile/ui/ProfileCard/ProfileCard.module.scss"    ]
 }

@@ -1,6 +1,7 @@
 {
   "About": "About",
   "Auth form": "",
+  "Edit": "Edit",
   "Enter password": "Enter password",
   "Enter username": "Enter username",
   "Lang": "Lang",
@@ -9,11 +10,16 @@
   "Main": "Main",
   "PROFILE PAGE": "PROFILE PAGE",
   "Page not found": "Page not found",
+  "Profile": "Profile",
   "Refresh page": "Refresh page",
   "Throw Error": "Throw Error",
   "Toggle": "Toggle",
   "Unexpected Error Occurred": "Unexpected Error Occurred",
   "You entered wrong login or password": "You entered wrong login or password",
+  "Youe name": "Youe name",
+  "Youe surname": "Youe surname",
+  "Your name": "Your name",
+  "Your surname": "Your surname",
   "decrement": "decrement",
   "increment": "increment"
 }

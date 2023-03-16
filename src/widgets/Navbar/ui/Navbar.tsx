@@ -30,7 +30,7 @@ export const Navbar = memo(({ className }: NavbarProps) => {
     }, [dispatch]);
 
     if (authData) {
-        return ( 
+        return (
             <div className={classNames(cls.Navbar, {}, [className])}>
                 <Button
                     theme={ButtonTheme.CLEAR_INVERTED}

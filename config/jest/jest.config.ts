@@ -19,6 +19,7 @@ export default {
     // A set of global variables that need to be available in all test environments
     globals: {
         __IS_DEV__: true,
+        __API__: '',
     },
 
     // Automatically clear mock calls, instances, contexts and results before every test

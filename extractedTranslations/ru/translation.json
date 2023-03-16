@@ -1,6 +1,7 @@
 {
   "About": "О сайте",
   "Auth form": "Форма атентификации",
+  "Edit": "Edit",
   "Enter password": "Введите пароль",
   "Enter username": "Введите логин",
   "Lang": "Язык",
@@ -9,11 +10,16 @@
   "Main": "Главная",
   "PROFILE PAGE": "PROFILE PAGE",
   "Page not found": "Страница не найдена",
+  "Profile": "Profile",
   "Refresh page": "Refresh page",
   "Throw Error": "Throw Error",
   "Toggle": "Toggle",
   "Unexpected Error Occurred": "Unexpected Error Occurred",
   "You entered wrong login or password": "Неправильный логин или пароль",
+  "Youe name": "Youe name",
+  "Youe surname": "Youe surname",
+  "Your name": "Your name",
+  "Your surname": "Your surname",
   "decrement": "decrement",
   "increment": "increment"
 }

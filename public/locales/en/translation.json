@@ -12,5 +12,7 @@
   "Enter password": "Enter password",
   "Auth form": "Auth form",
   "You entered wrong login or password": "You entered wrong login or password",
-  "Log out": "Log out"
+  "Log out": "Log out",
+  "Profile": "Profile",
+  "Edit": "Edit"
 }
