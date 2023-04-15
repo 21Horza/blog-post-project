@@ -25,14 +25,14 @@
       "password": "123"
     }
   ],
-  "profile": { 
+  "profile": {
     "first": "Horza",
     "lastname": "Go",
-    "age": "25",
+    "age": 25,
     "currency": "Go",
-    "country": "Russia",
-    "city": "Ekaterinburg",
+    "country": "China",
+    "city": "Shanghai",
     "username": "admin",
-    "avatar": "https://espicture.ru/800/600/https/yt3.ggpht.com/a/AATXAJzio-2-eywg3le3ByF0d2diffaTAX3USMcvtw=s900-c-k-c0xffffffff-no-rj-mo"
+    "avatar": "https://imgv3.fotor.com/images/blog-cover-image/10-profile-picture-ideas-to-make-you-stand-out.jpg"
   }
 }
