@@ -1,6 +1,22 @@
 {
+  "": "",
+  "Cancel": "",
   "Edit": "",
+  "Error occured": "",
+  "Incorrect age": "",
+  "Incorrect country": "",
+  "Incorrect user data": "",
+  "No data": "",
   "Profile": "",
-  "Your name": "",
-  "Your surname": ""
+  "Refresh the page": "",
+  "Save": "",
+  "Server error": "",
+  "Set country": "",
+  "Set value": "",
+  "Your age": "Your age",
+  "Your avatar link": "Your avatar link",
+  "Your city": "Your city",
+  "Your name": "Your name",
+  "Your surname": "Your surname",
+  "Your username": "Your username"
 }

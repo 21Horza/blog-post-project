@@ -1,4 +1,20 @@
 {
   "Your name": "Your name",
-  "Your surname": "Your Surname"
+  "Your surname": "Your Surname",
+  "Server error": "Server error",
+  "Incorrect country": "Incorrect country",
+  "No data": "No data",
+  "Error occured": "Error occured",
+  "Incorrect user data": "Incorrect user data",
+  "Incorrect age": "Incorrect age",
+  "Your username": "Your username",
+  "Your city": "Your city",
+  "Your age": "Your age",
+  "Your avatar link": "Your avatar link",
+  "Set country": "Set country",
+  "Set value": "Set value",
+  "Profile": "Profile",
+  "Edit": "Edit",
+  "Cancel": "Cancel",
+  "Save": "Save"
 }

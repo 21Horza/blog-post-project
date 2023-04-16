@@ -1,6 +1,7 @@
 export {
     Profile,
     ProfileSchema,
+    ValidateProfileError,
 } from './model/types/profile';
 
 export {
@@ -10,11 +11,11 @@ export {
 
 export {
     fetchProfileData,
-} from './model/serveces/fetchProfileData/fetchProfileData';
+} from './model/services/fetchProfileData/fetchProfileData';
 
 export {
     updateProfileData,
-} from './model/serveces/updateProfileData/updateProfileData';
+} from './model/services/updateProfileData/updateProfileData';
 
 export {
     ProfileCard,
@@ -25,3 +26,4 @@ export { getProfileData } from './model/selectors/getProfileData/getProfileData'
 export { getProfileError } from './model/selectors/getProfileError/getProfileError';
 export { getProfileReadOnly } from './model/selectors/getProfileReadOnly/getProfileReadOnly';
 export { getProfileForm } from './model/selectors/getProfileForm/getProfileForm';
+export { getProfileValidateErrors } from './model/selectors/getProfileValidateError/getProfileValidateErrors';

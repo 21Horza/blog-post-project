@@ -1,1 +1,21 @@
-{}
+{
+    "No data": "Отсутствуеют данные пользователя",
+    "Your age": "Возраст",
+    "Your avatar link": "Ссылка на аватар",
+    "Your city": "Город",
+    "Your name": "Имя",
+    "Your surname": "Фамилия",
+    "Your username": "Имя пользователя",
+    "Save": "Сохранить",
+    "Profile": "Профиль",
+    "Server error": "Ошибка сервера",
+    "Cancel": "Отменить",
+    "Edit": "Редактировать",
+    "Error occured": "Произошла ошибка",
+    "Incorrect age": "Некорректный возраст",
+    "Incorrect country": "Неправильно выбрана страна",
+    "Incorrect user data": "Данные пользователя неверны",
+    "Set country": "Установите страну",
+    "Set value": "Установите значние"
+}
+  
