@@ -1,10 +1,10 @@
-import { useTranslation } from 'react-i18next';
 import { AppLink, AppLinkTheme } from 'shared/ui/AppLink/AppLink';
 import { memo } from 'react';
 import { classNames } from 'shared/lib/classNames/classNames';
 import { SidebarItemType } from 'widgets/Sidebar/model/item';
 import { useSelector } from 'react-redux';
 import { getUserAuthData } from 'entities/User';
+import { useTranslation } from 'react-i18next';
 import cls from './SidebarItem.module.scss';
 
 interface SidebarItemProps {
@@ -13,6 +13,7 @@ interface SidebarItemProps {
 }
 
 export const SidebarItem = memo(({ item, collapsed }: SidebarItemProps) => {
+    /* i18next-extract-disable-next-line */
     const { t } = useTranslation();
     const isAuth = useSelector(getUserAuthData);
 
