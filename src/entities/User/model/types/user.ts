@@ -5,4 +5,5 @@ export interface User {
 
 export interface UserSchema {
     authData?: User; // if undefined, then user is not auth
+    _mounted: boolean;
 }
