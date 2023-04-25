@@ -2,7 +2,7 @@ import { ComponentStory, ComponentMeta } from '@storybook/react';
 import { Select } from './Select';
 
 export default {
-    title: 'widget/Select',
+    title: 'shared/Select',
     component: Select,
     argTypes: {
         backgroundColor: { control: 'color' },
