@@ -102,6 +102,24 @@
       "text": "another comment",
       "articleId": "1",
       "userId": "1"
+    },
+    {
+      "articleId": "1",
+      "userId": "1",
+      "text": "6656757",
+      "id": "ZofM8Ya"
+    },
+    {
+      "articleId": "1",
+      "userId": "1",
+      "text": "vgghvjtv",
+      "id": "KCZb_Fv"
+    },
+    {
+      "articleId": "1",
+      "userId": "1",
+      "text": "Hello, people",
+      "id": "sheVF2-"
     }
   ],
   "users": [
@@ -120,14 +138,28 @@
       "avatar": "https://sun9-2.userapi.com/c857528/v857528575/4709a/gPOpYAuVscI.jpg"
     }
   ],
-  "profile": {
-    "first": "Horza",
-    "lastname": "Go",
-    "age": 23,
-    "currency": "Go",
-    "country": "Germany",
-    "city": "Shanghai",
-    "username": "admin",
-    "avatar": "https://imgv3.fotor.com/images/blog-cover-image/10-profile-picture-ideas-to-make-you-stand-out.jpg"
-  }
+  "profile": [
+    {
+      "id": "1",
+      "first": "iHorza",
+      "lastname": "Go",
+      "age": 23,
+      "currency": "Go",
+      "country": "China",
+      "city": "Shanghai",
+      "username": "admin",
+      "avatar": "https://imgv3.fotor.com/images/blog-cover-image/10-profile-picture-ideas-to-make-you-stand-out.jpg"
+    },
+    {
+      "id": "2",
+      "first": "Twister",
+      "lastname": "Up",
+      "age": 25,
+      "currency": "Go",
+      "country": "Germany",
+      "city": "Munich",
+      "username": "user",
+      "avatar": "https://sun9-2.userapi.com/c857528/v857528575/4709a/gPOpYAuVscI.jpg"
+    }
+  ]
 }

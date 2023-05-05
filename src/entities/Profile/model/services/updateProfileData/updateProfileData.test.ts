@@ -12,6 +12,7 @@ const data = {
     lastname: 'Go',
     city: 'Shanghai',
     currency: Currency.RMB,
+    id: '1',
 };
 
 describe('updateProfileData', () => {
