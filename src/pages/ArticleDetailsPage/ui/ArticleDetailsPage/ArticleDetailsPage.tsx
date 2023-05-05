@@ -8,13 +8,13 @@ import { CommentList } from 'entities/Comment';
 import { DynamicModuleLoader, ReducerList } from 'shared/lib/DynamicModuleLoader/DynamicModuleLoader';
 import { useDispatch, useSelector } from 'react-redux';
 import { useInitialEffect } from 'shared/lib/hooks/useInitialEffect/useInitialEffect';
-import {
-    fetchCommentsByArticleId,
-} from 'pages/ArticleDetailsPage/model/services/fetchCommentsByArticleId/fetchCommentsByArticleId';
 import AddCommentForm from 'features/addCommentForm/ui/AddCommentForm/AddCommentForm';
 import {
+    fetchCommentsByArticleId,
+} from '../../model/services/fetchCommentsByArticleId/fetchCommentsByArticleId';
+import {
     addCommentForArticle,
-} from 'pages/ArticleDetailsPage/model/services/addCommentForArticle/addCommentForArticle';
+} from '../../model/services/addCommentForArticle/addCommentForArticle';
 import { getArticleCommentsIsLoading } from '../../model/selectors/comments';
 import { articleDetailsCommentsReducer, getArticleComments } from '../../model/slices/articleDetailsCommentSlice';
 import cls from './ArticleDetailsPage.module.scss';
