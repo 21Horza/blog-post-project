@@ -4,6 +4,7 @@ import { userReducer } from 'entities/User';
 import { useDispatch } from 'react-redux';
 import { CombinedState, Reducer, ReducersMapObject } from 'redux';
 import { $api } from 'shared/api/api';
+import { scrollSafeReducer } from 'features/ScrollSafe';
 import { createReducerManager } from './reducerManager';
 import { StateSchema, ThunkExtraArg } from './StateSchema';
 
@@ -16,6 +17,7 @@ export function createReduxStore(
         ...asyncReducers,
         counter: counterReducer,
         user: userReducer,
+        scrollSafe: scrollSafeReducer,
     };
 
     const reducerManager = createReducerManager(rootReducers);
