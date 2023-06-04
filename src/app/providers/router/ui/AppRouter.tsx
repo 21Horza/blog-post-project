@@ -1,4 +1,3 @@
-import { getUserAuthData } from 'entities/User';
 import {
     Suspense, memo, useCallback, useMemo,
 } from 'react';
