@@ -24,7 +24,8 @@ body {
 }
 
 *::-webkit-scrollbar-track {
-    background: var(--card-bg);
+    margin-left: 10px;
+    background: var(--code-bg);
 }
 
 *::-webkit-scrollbar-thumb {
