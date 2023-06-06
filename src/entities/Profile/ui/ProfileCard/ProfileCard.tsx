@@ -79,21 +79,21 @@ export const ProfileCard = (props: ProfileCardProps) => {
                 )}
                 <Input
                     value={data?.first}
-                    placeholder={t('Your name')}
+                    placeholder={t('Name')}
                     className={cls.input}
                     onChange={onChangeFirstName}
                     readOnly={readonly}
                 />
                 <Input
                     value={data?.lastname}
-                    placeholder={t('Your surname')}
+                    placeholder={t('Surname')}
                     className={cls.input}
                     onChange={onChangeLastName}
                     readOnly={readonly}
                 />
                 <Input
                     value={data?.age}
-                    placeholder={t('Your age')}
+                    placeholder={t('Age')}
                     className={cls.input}
                     onChange={onChangeAge}
                     readOnly={readonly}
@@ -101,21 +101,21 @@ export const ProfileCard = (props: ProfileCardProps) => {
                 />
                 <Input
                     value={data?.city}
-                    placeholder={t('Your city')}
+                    placeholder={t('City')}
                     className={cls.input}
                     onChange={onChangeCity}
                     readOnly={readonly}
                 />
                 <Input
                     value={data?.username}
-                    placeholder={t('Your username')}
+                    placeholder={t('Username')}
                     className={cls.input}
                     onChange={onChangeUsername}
                     readOnly={readonly}
                 />
                 <Input
                     value={data?.avatar}
-                    placeholder={t('Your avatar link')}
+                    placeholder={t('Avatar link')}
                     className={cls.input}
                     onChange={onChangeAvatar}
                     readOnly={readonly}

@@ -3,11 +3,16 @@
   "Comments": "Comments",
   "ascending order": "ascending order",
   "descending order": "descending order",
-  "by": "by",
   "Sort by": "Sort by",
   "Search": "Search",
   "issue date": "issue date",
   "title": "title",
   "views": "views",
-  "Order by": "Order by"
+  "Order by": "Order by",
+  "All articles": "All articles",
+  "Auto": "Auto",
+  "IT": "IT",
+  "Politics": "Politics",
+  "Science": "Science",
+  "Recommendations": "Recommendations"
 }

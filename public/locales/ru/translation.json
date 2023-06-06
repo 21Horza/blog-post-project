@@ -1,5 +1,7 @@
 {
     "About": "О сайте",
+    "Profile": "Профиль",
+    "Articles": "Статьи",
     "Auth form": "Форма аутентификации",
     "Cancel": "Отменить",
     "Enter password": "Введите пароль",
@@ -16,6 +18,8 @@
     "Throw Error": "Вывести ошибку",
     "Toggle": "Переключить",
     "Unexpected Error Occurred": "Произошла непредвиденная ошибка",
-    "You entered wrong login or password": "Вы ввели еправильный логин или пароль"
+    "You entered wrong login or password": "Вы ввели еправильный логин или пароль",
+    "Create an article": "Создать статью",
+    "Online magazine": "Онлайн журнал"
 }
   

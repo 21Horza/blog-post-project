@@ -23,7 +23,7 @@ export const ArticleSortSelector = memo((props: ArticleSortSelectorProps) => {
         order,
     } = props;
 
-    const { t } = useTranslation();
+    const { t } = useTranslation('article-details');
 
     const orderOptions = useMemo<SelectOption<SortOrder>[]>(() => [
         {
