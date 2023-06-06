@@ -1,4 +1,4 @@
-import { memo } from 'react';
+import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Page } from 'widgets/Page/Page';
 
@@ -6,10 +6,10 @@ const MainPage = () => {
     const { t } = useTranslation();
 
     return (
-        <Page>
+        <div>
             {t('Main')}
-        </Page>
+        </div>
     );
 };
 
-export default memo(MainPage);
+export default MainPage;
