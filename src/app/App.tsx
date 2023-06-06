@@ -1,5 +1,3 @@
-/* eslint-disable react/button-has-type */
-/* eslint-disable i18next/no-literal-string */
 import './styles/index.scss';
 import { classNames } from 'shared/lib/classNames/classNames';
 import { Navbar } from 'widgets/Navbar';
