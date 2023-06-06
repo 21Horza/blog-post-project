@@ -6,7 +6,7 @@ import { AppRouteProps, routeConfig } from 'shared/config/routeConfig/routeConfi
 import { PageLoader } from 'widgets/PageLoader/PageLoader';
 import { RequireAuth } from './RequireAuth';
 
-function AppRouter() {
+const AppRouter = () => {
     const renderWithWrapper = useCallback((route: AppRouteProps) => {
         const element = (
             <Suspense fallback={<PageLoader />}>
@@ -31,6 +31,6 @@ function AppRouter() {
             {Object.values(routeConfig).map((renderWithWrapper))}
         </Routes>
     );
-}
+};
 
 export default memo(AppRouter);
