@@ -37,8 +37,6 @@ export default {
     ],
     moduleFileExtensions: [
         'js',
-        'mjs',
-        'cjs',
         'jsx',
         'ts',
         'tsx',
