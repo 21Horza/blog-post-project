@@ -13,28 +13,8 @@ export function buildLoaders(options: BuildOptions): webpack.RuleSetRule[] {
 
     const babelLoader = buildBabelLoader(options);
 
-    // const babelLoader = {
-    //     test: /\.(js|jsx|tsx)$/,
-    //     exclude: /node_modules/,
-    //     use: {
-    //         loader: 'babel-loader',
-    //         options: {
-    //             presets: ['@babel/preset-env'],
-    //             plugins: [
-    //                 [
-    //                     'i18next-extract',
-    //                     {
-    //                         locales: ['ru', 'en'],
-    //                         keyAsDefaultValue: true,
-    //                     },
-    //                 ],
-    //             ],
-    //         },
-    //     },
-    // };
-
     const fileLoader = {
-        test: /\.(png|jpe?g|gif)$/i,
+        test: /\.(png|jpe?g|gif|woff2|woff)$/i,
         use: [
             {
                 loader: 'file-loader',
@@ -45,17 +25,17 @@ export function buildLoaders(options: BuildOptions): webpack.RuleSetRule[] {
     const cssLoader = buildCssLoader(isDev);
 
     // If we don't use TypeScript - we need babel-loader
-    const typeScriptLoader = {
+    const typescriptLoader = {
         test: /\.tsx?$/,
         use: 'ts-loader',
         exclude: /node_modules/,
     };
 
     return [
-        babelLoader,
-        typeScriptLoader,
-        cssLoader,
-        svgLoader,
         fileLoader,
+        svgLoader,
+        babelLoader,
+        typescriptLoader,
+        cssLoader,
     ];
 }

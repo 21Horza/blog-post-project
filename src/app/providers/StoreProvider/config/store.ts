@@ -44,4 +44,3 @@ export function createReduxStore(
 }
 
 export type AppDispatch = ReturnType<typeof createReduxStore>['dispatch']
-export const useAppDispatch = () => useDispatch<AppDispatch>();
