@@ -1,3 +1,3 @@
 import { lazy } from 'react';
 
-export const AboutPageAsync = lazy(() => import('./AboutPage'));
+export const AboutPageLazyAsync = lazy(() => import('./AboutPage'));
