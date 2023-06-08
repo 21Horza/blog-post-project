@@ -6,13 +6,13 @@ import { Button } from 'shared/ui/Button/Button';
 import { useSelector } from 'react-redux';
 import { useAppDispatch } from 'shared/lib/hooks/useAppDispatch/useAppDispatch';
 import { DynamicModuleLoader, ReducerList } from 'shared/lib/DynamicModuleLoader/DynamicModuleLoader';
+import { HStack } from 'shared/ui/Stack';
 import {
     getAddCommentFormError,
     getAddCommentFormText,
 } from '../../model/selectors/addCommentFormSelectors';
 import cls from './AddCommentForm.module.scss';
 import { addCommentFormActions, addCommentFormReducer } from '../../model/slices/addCommentFormSlice';
-import { HStack } from 'shared/ui/Stack';
 
 export interface AddCommentFormProps {
     className?: string;

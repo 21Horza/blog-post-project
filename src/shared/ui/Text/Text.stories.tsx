@@ -63,3 +63,19 @@ SizeL.args = {
     size: TextSize.L,
 };
 SizeL.decorators = [ThemeDecorator(Theme.DARK)];
+
+export const SizeM = Template.bind({});
+SizeM.args = {
+    title: 'Title lorem ipsun',
+    text: 'Description Description Description Description',
+    size: TextSize.M,
+};
+SizeM.decorators = [ThemeDecorator(Theme.DARK)];
+
+export const SizeS = Template.bind({});
+SizeS.args = {
+    title: 'Title lorem ipsun',
+    text: 'Description Description Description Description',
+    size: TextSize.S,
+};
+SizeS.decorators = [ThemeDecorator(Theme.DARK)];
