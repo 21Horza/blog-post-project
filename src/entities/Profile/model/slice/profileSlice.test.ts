@@ -1,8 +1,8 @@
 import {
     profileActions, profileReducer, ProfileSchema, updateProfileData, ValidateProfileError,
-} from 'entities/Profile';
-import { Country } from 'entities/Country';
-import { Currency } from 'entities/Currency';
+} from '../../../Profile';
+import { Country } from '../../../Country';
+import { Currency } from '../../../Currency';
 
 const data = {
     username: 'admin',

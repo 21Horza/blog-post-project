@@ -1,5 +1,3 @@
-/* eslint-disable jsx-a11y/click-events-have-key-events */
-/* eslint-disable jsx-a11y/no-static-element-interactions */
 import { useTheme } from 'app/providers/ThemeProvider';
 import React, {
     MutableRefObject,
@@ -64,7 +62,6 @@ export const Modal = (props: ModalProps) => {
         if (isOpen) {
             window.addEventListener('keydown', onKeyDown);
         }
-        console.log('');
 
         return () => {
             clearTimeout(timerRef.current);
