@@ -8,6 +8,6 @@ export default {
         backgroundColor: { control: 'color' },
     },
 } as ComponentMeta<typeof ListBox>;
-const Template: ComponentStory<typeof ListBox> = (args) => <ListBox />;
+const Template: ComponentStory<typeof ListBox> = (args) => <ListBox {...args} />;
 export const Normal = Template.bind({});
 Normal.args = {};
