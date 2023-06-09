@@ -35,7 +35,7 @@ export const CurrencySelect = memo((props: CurrencySelectProps) => {
 
     return (
         <ListBox
-            direction="top"
+            direction="top right"
             readonly={readonly}
             className={className}
             value={value}
