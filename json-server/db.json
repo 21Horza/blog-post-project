@@ -420,7 +420,8 @@
           "paragraphs": [
             "Now to initiate a transaction run cargo +nightly run in your terminal."
           ]
-        },{
+        },
+        {
           "id": "35",
           "type": "TEXT",
           "title": "Conclusion",
@@ -910,7 +911,7 @@
       "age": 25,
       "currency": "RUB",
       "country": "Russia",
-      "city": "Moscow",
+      "city": "Ekaterinburg",
       "username": "admin213",
       "avatar": "https://imgv3.fotor.com/images/blog-cover-image/10-profile-picture-ideas-to-make-you-stand-out.jpg"
     },
