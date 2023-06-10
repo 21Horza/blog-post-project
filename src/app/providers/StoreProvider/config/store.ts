@@ -1,10 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit';
 import { counterReducer } from 'entities/Counter';
 import { userReducer } from 'entities/User';
-import { useDispatch } from 'react-redux';
 import { CombinedState, Reducer, ReducersMapObject } from 'redux';
 import { $api } from 'shared/api/api';
 import { scrollSafeReducer } from 'features/ScrollSafe';
+import { rtkApi } from 'shared/api/rtkApi';
 import { createReducerManager } from './reducerManager';
 import { StateSchema, ThunkExtraArg } from './StateSchema';
 
@@ -18,6 +18,7 @@ export function createReduxStore(
         counter: counterReducer,
         user: userReducer,
         scrollSafe: scrollSafeReducer,
+        [rtkApi.reducerPath]: rtkApi.reducer,
     };
 
     const reducerManager = createReducerManager(rootReducers);
@@ -34,7 +35,7 @@ export function createReduxStore(
             thunk: {
                 extraArgument: extraArg,
             },
-        }),
+        }).concat(rtkApi.middleware),
     });
 
     // @ts-ignore

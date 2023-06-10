@@ -16,5 +16,8 @@
   "Profile": "Profile",
   "Edit": "Edit",
   "Cancel": "Cancel",
-  "Save": "Save"
+  "Save": "Save",
+  "profile": {
+    "Profile not found": "Profile not found"
+  }
 }
