@@ -1,7 +1,16 @@
 export {
     getUserAuthData,
+} from './model/selectors/getUserAuthData/getUserData';
+
+export {
     getUserMounted,
-} from './model/selectors/getUserData';
+} from './model/selectors/getUserMounted/getUserMounted';
+
+export {
+    isUserAdmin,
+    isUserManager,
+    getUserRoles,
+} from './model/selectors/getUserRole/getUserRole';
 
 export {
     userReducer,
@@ -11,4 +20,5 @@ export {
 export {
     UserSchema,
     User,
+    UserRole,
 } from './model/types/user';

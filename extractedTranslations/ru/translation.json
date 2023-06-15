@@ -1,6 +1,8 @@
 {
   "": "",
   "About": "О сайте",
+  "Admin page": "Admin page",
+  "Admin pannel": "Admin pannel",
   "Age": "Age",
   "All articles": "All articles",
   "Article not found": "Article not found",
@@ -61,6 +63,7 @@
   "Unexpected Error Occurred": "Unexpected Error Occurred",
   "User profile": "User profile",
   "Username": "Username",
+  "You don't have access to this page": "You don't have access to this page",
   "You entered wrong login or password": "Неправильный логин или пароль",
   "Youe name": "Youe name",
   "Youe surname": "Youe surname",
