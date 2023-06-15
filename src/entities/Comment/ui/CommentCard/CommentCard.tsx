@@ -37,13 +37,12 @@ export const CommentCard = memo((props: CommentCardProps) => {
     if (!comment) return null;
 
     return (
-        // eslint-disable-next-line i18next/no-literal-string
-        <div className={classNames(cls.CommentCard, {}, [className])}>
+        <VStack gap="8" max className={classNames(cls.CommentCard, {}, [className])}>
             <AppLink to={`${RoutePath.profile}${comment.user.id}`} className={cls.header}>
                 {comment.user.avatar ? <Avatar size={30} src={comment.user.avatar} /> : null}
                 <Text className={cls.username} text={comment.user.username} />
             </AppLink>
             <Text className={cls.text} text={comment.text} />
-        </div>
+        </VStack>
     );
 });
