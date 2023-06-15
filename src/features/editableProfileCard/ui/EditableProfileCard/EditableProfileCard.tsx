@@ -86,12 +86,14 @@ export const EditableProfileCard = memo((props: EditableProfileCardProps) => {
     const onChangeCountry = useCallback((country?: Country) => {
         dispatch(profileActions.updateProfile({ country }));
     }, [dispatch]);
+
     return (
         <DynamicModuleLoader reducers={reducers}>
             <VStack gap="8" max className={classNames('', {}, [className])}>
                 <EditableProfileCardHeader />
                 {validateErrors?.length && validateErrors.map((err) => (
                     <Text
+                        data-testid="EditableProfileCard.Error"
                         key={err}
                         theme={TextTheme.ERROR}
                         text={validateErrorTranslations[err]}
