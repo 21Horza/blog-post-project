@@ -30,7 +30,8 @@
         // import * as React from 'react';
         // we can write
         // import React from 'react';
-        "allowSyntheticDefaultImports": true
+        "allowSyntheticDefaultImports": true,
+        "isolatedModules": true
     },
     "ts-node": {
         "compilerOptions": {

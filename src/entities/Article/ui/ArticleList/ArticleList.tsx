@@ -5,7 +5,8 @@ import { Text, TextSize } from 'shared/ui/Text/Text';
 import { ArticleListItemSkeleton } from '../../ui/ArticleListItem/ArticleListItemSkeleton';
 import { ArticleListItem } from '../ArticleListItem/ArticleListItem';
 import cls from './ArticleList.module.scss';
-import { Article, ArticleView } from '../../model/types/article';
+import { Article } from '../../model/types/article';
+import { ArticleView } from '../../model/consts/consts';
 
 interface ArticleListProps {
     className?: string;

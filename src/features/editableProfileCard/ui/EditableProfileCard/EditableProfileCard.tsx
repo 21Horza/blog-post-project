@@ -14,10 +14,10 @@ import { getProfileIsLoading } from '../../model/selectors/getProfileIsLoading/g
 import { getProfileReadOnly } from '../../model/selectors/getProfileReadOnly/getProfileReadOnly';
 import { getProfileError } from '../../model/selectors/getProfileError/getProfileError';
 import { getProfileValidateErrors } from '../../model/selectors/getProfileValidateError/getProfileValidateErrors';
-import { ValidateProfileError } from '../../model/types/editableProfileCardSchema';
 import { fetchProfileData } from '../../model/services/fetchProfileData/fetchProfileData';
 import { profileActions, profileReducer } from '../../model/slice/profileSlice';
 import { EditableProfileCardHeader } from '../EditableProfileCardHeader/EditableProfileCardHeader';
+import { ValidateProfileError } from '../../model/consts/consts';
 
 interface EditableProfileCardProps {
     className?: string;

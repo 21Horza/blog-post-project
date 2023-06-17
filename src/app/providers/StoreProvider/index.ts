@@ -5,9 +5,7 @@ import type { StateSchema, ThunkExtraArg, ThunkConfig } from './config/StateSche
 
 export {
     StoreProvider,
-    createReduxStore,
-    AppDispatch,
-    StateSchema, // types can be used from the upper layer as an exception
+    createReduxStore, StateSchema,
     ThunkExtraArg,
     ThunkConfig,
-};
+}; export type { AppDispatch };

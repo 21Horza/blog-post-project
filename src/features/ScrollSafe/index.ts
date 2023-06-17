@@ -1,4 +1,4 @@
-export {
+export type {
     ScrollSafeSchema,
 } from './model/types/ScrollSchema';
 
