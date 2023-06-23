@@ -19,7 +19,7 @@
         // for absolute imports
         "baseUrl": ".",
         "paths": {
-            "*": ["./src/*"]
+            "@/*": ["./src/*"]
         },
         // esModuleInterop allows to work with packages
         // that uses common js as with usual packages with the help of import (require() module.export) = common js
