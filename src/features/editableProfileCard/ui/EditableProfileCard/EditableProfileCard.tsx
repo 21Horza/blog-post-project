@@ -5,7 +5,7 @@ import { Country } from 'entities/Country';
 import { Currency } from 'entities/Currency';
 import { useDispatch, useSelector } from 'react-redux';
 import { useInitialEffect } from 'shared/lib/hooks/useInitialEffect/useInitialEffect';
-import { ReducerList, DynamicModuleLoader } from 'shared/lib/DynamicModuleLoader/DynamicModuleLoader';
+import { ReducerList, DynamicModuleLoader } from 'shared/lib/components/DynamicModuleLoader/DynamicModuleLoader';
 import { ProfileCard } from 'entities/Profile/ui/ProfileCard/ProfileCard';
 import { Text, TextTheme } from 'shared/ui/Text/Text';
 import { VStack } from 'shared/ui/Stack';

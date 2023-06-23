@@ -1,13 +1,10 @@
-import { useTheme } from 'app/providers/ThemeProvider';
-import React, {
-    MutableRefObject,
-    ReactNode, useCallback, useEffect, useRef, useState,
-} from 'react';
 import { classNames, Mods } from 'shared/lib/classNames/classNames';
+import { ReactNode } from 'react';
+import { useTheme } from 'app/providers/ThemeProvider';
 import { useModal } from 'shared/lib/hooks/useModal/useModal';
+import { Overlay } from '../Overlay/Overlay';
 import { Portal } from '../Portal/Portal';
 import cls from './Modal.module.scss';
-import { Overlay } from '../Overlay/Overlay';
 
 interface ModalProps {
     className?: string;
@@ -38,26 +35,25 @@ export const Modal = (props: ModalProps) => {
         isOpen,
     });
 
+    const { theme } = useTheme();
+
     const mods: Mods = {
         [cls.opened]: isOpen,
         [cls.isClosing]: isClosing,
     };
 
-    // if flag lazy & component not mounted => don't mount
     if (lazy && !isMounted) {
         return null;
     }
 
     return (
         <Portal>
-            <div className={classNames(cls.Modal, mods, [className])}>
+            <div className={classNames(cls.Modal, mods, [className, theme, 'app_modal'])}>
                 <Overlay onClick={close} />
-                <div className={cls.overlay} onClick={close}>
-                    <div
-                        className={cls.content}
-                    >
-                        {children}
-                    </div>
+                <div
+                    className={cls.content}
+                >
+                    {children}
                 </div>
             </div>
         </Portal>
