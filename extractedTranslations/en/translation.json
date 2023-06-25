@@ -21,6 +21,9 @@
   "Enter username": "Enter username",
   "Error occured": "Error occured",
   "Failed to load articles": "Failed to load articles",
+  "Give a feedback about the article, it will help us improve the quality of the work": {
+    "": ""
+  },
   "Go back to the list": "Go back to the list",
   "IT": "IT",
   "Incorrect age": "Incorrect age",
@@ -43,6 +46,7 @@
   "Politics": "Politics",
   "Profile": "Profile",
   "Profile not found": "Profile not found",
+  "Rate the article": "Rate the article",
   "Read more": "",
   "Recommendations": "Recommendations",
   "Refresh page": "Refresh page",
@@ -58,6 +62,7 @@
   "Short lang": "",
   "Sort by": "Sort by",
   "Surname": "Surname",
+  "Thanks for rating!": "Thanks for rating!",
   "There are no comments": "There are no comments",
   "Throw Error": "Throw Error",
   "Toggle": "Toggle",
