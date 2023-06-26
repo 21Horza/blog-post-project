@@ -6,7 +6,6 @@ import { Country } from '@/entities/Country';
 import { Currency } from '@/entities/Currency';
 import { useInitialEffect } from '@/shared/lib/hooks/useInitialEffect/useInitialEffect';
 import { ReducerList, DynamicModuleLoader } from '@/shared/lib/components/DynamicModuleLoader/DynamicModuleLoader';
-import { ProfileCard } from '@/entities/Profile/ui/ProfileCard/ProfileCard';
 import { Text, TextTheme } from '@/shared/ui/Text/Text';
 import { VStack } from '@/shared/ui/Stack';
 import { getProfileForm } from '../../model/selectors/getProfileForm/getProfileForm';
@@ -18,6 +17,7 @@ import { fetchProfileData } from '../../model/services/fetchProfileData/fetchPro
 import { profileActions, profileReducer } from '../../model/slice/profileSlice';
 import { EditableProfileCardHeader } from '../EditableProfileCardHeader/EditableProfileCardHeader';
 import { ValidateProfileError } from '../../model/consts/consts';
+import { ProfileCard } from '@/entities/Profile';
 
 interface EditableProfileCardProps {
     className?: string;

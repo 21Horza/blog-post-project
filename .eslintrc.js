@@ -70,6 +70,7 @@ module.exports = {
         'no-undef': 'off',
         'react/no-array-index-key': 'off',
         'arrow-body-style': 'off',
+        'horza-for-production/public-api-imports': ['error', { alias: '@' }],
         'horza-for-production/relative-path-checker': ['error', { alias: '@' }],
     },
     globals: {
