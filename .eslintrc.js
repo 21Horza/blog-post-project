@@ -77,7 +77,14 @@ module.exports = {
                 alias: '@',
                 testFilesPatters: ['**/*.test.*', '**/*.story.*', '**/StoreDecorator.tsx'], 
             }
-    ],
+        ],
+        'horza-for-production/layer-imports': [
+            'error', 
+            { 
+                alias: '@',
+                ignoreImportPatterns: ['**/StoreProvider', '**/testing'], 
+            }
+        ],
     },
     globals: {
         __IS_DEV__: true,
