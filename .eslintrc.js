@@ -70,8 +70,14 @@ module.exports = {
         'no-undef': 'off',
         'react/no-array-index-key': 'off',
         'arrow-body-style': 'off',
-        'horza-for-production/public-api-imports': ['error', { alias: '@' }],
         'horza-for-production/relative-path-checker': ['error', { alias: '@' }],
+        'horza-for-production/public-api-imports': [
+            'error', 
+            { 
+                alias: '@',
+                testFilesPatters: ['**/*.test.*', '**/*.story.*', '**/StoreDecorator.tsx'], 
+            }
+    ],
     },
     globals: {
         __IS_DEV__: true,

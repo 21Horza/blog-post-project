@@ -5,7 +5,7 @@ import { Comment } from '@/entities/Comment';
 import {
     fetchCommentsByArticleId,
 } from '../../services/fetchCommentsByArticleId/fetchCommentsByArticleId';
-import { addCommentFormActions } from '@/features/addCommentForm/model/slices/addCommentFormSlice';
+import { addCommentFormActions } from '@/features/addCommentForm';
 import { getArticleDetailsData } from '@/entities/Article';
 
 export const addCommentForArticle = createAsyncThunk<
