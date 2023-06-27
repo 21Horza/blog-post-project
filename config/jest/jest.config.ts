@@ -50,13 +50,14 @@ export default {
     testMatch: [
         '<rootDir>src/**/*(*.)@(spec|test).[tj]s?(x)',
     ],
-    preset: 'ts-jest',
-    transform: {
-        '^.+\\.ts?$': 'ts-jest',
-    },
+    // preset: 'ts-jest',
+    // transform: {
+    //     '^.+\\.ts?$': 'ts-jest',
+    // },
     moduleNameMapper: {
         '\\.s?css$': 'identity-obj-proxy',
         '\\.svg': path.resolve(__dirname, 'jestEmptyComponent.tsx'),
+        '^@/(.*)$': '<rootDir>/src/$1',
     },
     reporters: [
         'default',
