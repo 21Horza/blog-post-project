@@ -21,11 +21,29 @@ export enum ButtonSize {
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement>{
     className?: string;
+    /**
+     * Button theme. Responsible for visual (in frame, without styles, reverted color for project theme and so on)
+     */
     theme?: ButtonTheme;
+    /**
+     * Flag that makes button squared
+     */
     square?: boolean;
+    /**
+     * Button size according to design system
+     */
     size?: ButtonSize;
+    /**
+     * Flag that responsible for button work
+     */
     disabled?: boolean;
+    /**
+     * Button content
+     */
     children?: ReactNode;
+    /**
+     * Makes button with full width
+     */
     fullWidth?: boolean;
 }
 
