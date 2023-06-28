@@ -6,7 +6,7 @@ import TileIcon from '@/shared/assets/icons/tile.svg';
 import { Button, ButtonTheme } from '@/shared/ui/Button';
 import { Icon } from '@/shared/ui/Icon';
 import cls from './ArticleViewSelector.module.scss';
-import { ArticleView } from '../../model/consts/consts';
+import { ArticleView } from '@/entities/Article';
 
 interface ArticleViewSelectorProps {
     className?: string;
