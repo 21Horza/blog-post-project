@@ -1,3 +1,4 @@
+/* eslint-disable horza-for-production/public-api-imports */
 import { Story } from '@storybook/react';
 import { StateSchema, StoreProvider } from '@/app/providers/StoreProvider';
 import { loginReducer } from '@/features/AuthByUsername/testing';
