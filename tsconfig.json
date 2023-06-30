@@ -7,7 +7,7 @@
         "noImplicitAny": true,
         "module": "ESNext",
         // specification to be compiled to (to support more browsers)
-        "target": "esnext",
+        "target": "es5",
         // allows to work with react & don't need to import React in each file
         "jsx": "react-jsx",
         // allows compiler to work with not only ts, but also js
