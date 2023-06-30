@@ -33,7 +33,7 @@ export const Counter = () => {
             </Button>
             <Button
                 onClick={handleAddFive}
-                data-testid="increment-btn"
+                data-testid="incrementfive-btn"
             >
                 {t('Add five')}
             </Button>
