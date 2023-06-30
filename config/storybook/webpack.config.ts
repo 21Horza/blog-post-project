@@ -20,7 +20,6 @@ export default ({ config }: {config: webpack.Configuration}) => {
     };
 
     if (config.module?.rules) {
-        // eslint-disable-next-line no-param-reassign
         config.module.rules = config.module?.rules?.map(
             (rule: RuleSetRule | '...') => {
                 if (rule !== '...' && /svg/.test(rule.test as string)) {

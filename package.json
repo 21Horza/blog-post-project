@@ -129,6 +129,9 @@
     "react-redux": "^7.2.6",
     "react-router-dom": "^6.2.1"
   },
+  "browser": {
+    "[module-name]": false   
+  },
   "loki": {
     "configurations": {
       "chrome.laptop": {
