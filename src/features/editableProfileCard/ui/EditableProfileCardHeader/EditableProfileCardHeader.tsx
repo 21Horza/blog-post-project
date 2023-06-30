@@ -1,6 +1,6 @@
 import { memo, useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
-import { useSelector, useDispatch } from 'react-redux';
+import { useSelector } from 'react-redux';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import { getUserAuthData } from '@/entities/User';
 import { Button, ButtonTheme } from '@/shared/ui/Button';
@@ -10,6 +10,7 @@ import { getProfileData } from '../../model/selectors/getProfileData/getProfileD
 import { getProfileReadOnly } from '../../model/selectors/getProfileReadOnly/getProfileReadOnly';
 import { updateProfileData } from '../../model/services/updateProfileData/updateProfileData';
 import { profileActions } from '../../model/slice/profileSlice';
+import { useAppDispatch } from '@/shared/lib/hooks/useAppDispatch/useAppDispatch';
 
 interface EditableProfileCardHeaderProps {
     className?: string;
@@ -26,7 +27,7 @@ export const EditableProfileCardHeader = memo((props: EditableProfileCardHeaderP
     const canEdit = authData?.id === profileData?.id;
 
     const readonly = useSelector(getProfileReadOnly);
-    const dispatch = useDispatch();
+    const dispatch = useAppDispatch();
 
     const onEdit = useCallback(() => {
         dispatch(profileActions.setReadOnly(false));
