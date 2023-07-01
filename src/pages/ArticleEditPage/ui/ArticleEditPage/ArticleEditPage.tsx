@@ -18,7 +18,9 @@ const ArticleEditPage = memo((props: ArticleEditPageProps) => {
     return (
         <Page className={classNames('', {}, [className])}>
             {isEdit
+            // i18next-extract-disable-line
                 ? t(`Edit article with id: ${id}`)
+            // i18next-extract-disable-line
                 : t('Create a new article')}
         </Page>
     );
