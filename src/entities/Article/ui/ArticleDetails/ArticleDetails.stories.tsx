@@ -14,79 +14,145 @@ export default {
 
 const Template: ComponentStory<typeof ArticleDetails> = (args) => <ArticleDetails {...args} />;
 
-const article: Article = {
-    id: '1',
-    title: 'Javascript news',
-    subtitle: 'Что нового в JS за 2022 год?',
-    img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png',
+const article = {
+    id: "1",
+    title: "HTML5 Features",
+    subtitle: "Cool features in HTML5",
+    img: "https://play-lh.googleusercontent.com/RslBy1o2NEBYUdRjQtUqLbN-ZM2hpks1mHPMiHMrpAuLqxeBPcFSAjo65nQHbTA53YYn",
     views: 1022,
-    createdAt: '26.02.2022',
-    type: [ArticleType.IT],
+    createdAt: "10.01.2023",
     user: {
-        id: '1',
-        username: 'Horza',
+        id: "1",
+        username: "Horza",
+        avatar: "https://sun9-2.userapi.com/c857528/v857528575/4709a/gPOpYAuVscI.jpg",
     },
-    blocks: [
-        {
-            id: '1',
-            type: ArticleBlockType.TEXT,
-            title: 'Заголовок этого блока',
-            paragraphs: [
-                'Программа, которую по традиции называют «Hello, world!», очень проста. Она выводит куда-либо фразу «Hello, world!», или другую подобную, средствами некоего языка.',
-                'JavaScript — это язык, программы на котором можно выполнять в разных средах. В нашем случае речь идёт о браузерах и о серверной платформе Node.js. Если до сих пор вы не написали ни строчки кода на JS и читаете этот текст в браузере, на настольном компьютере, это значит, что вы буквально в считанных секундах от своей первой JavaScript-программы.',
-                'Существуют и другие способы запуска JS-кода в браузере. Так, если говорить об обычном использовании программ на JavaScript, они загружаются в браузер для обеспечения работы веб-страниц. Как правило, код оформляют в виде отдельных файлов с расширением .js, которые подключают к веб-страницам, но программный код можно включать и непосредственно в код страницы. Всё это делается с помощью тега <script>. Когда браузер обнаруживает такой код, он выполняет его. Подробности о теге script можно посмотреть на сайте w3school.com. В частности, рассмотрим пример, демонстрирующий работу с веб-страницей средствами JavaScript, приведённый на этом ресурсе. Этот пример можно запустить и средствами данного ресурса (ищите кнопку Try it Yourself), но мы поступим немного иначе. А именно, создадим в каком-нибудь текстовом редакторе (например — в VS Code или в Notepad++) новый файл, который назовём hello.html, и добавим в него следующий код:',
-            ],
-        },
-        {
-            id: '4',
-            type: ArticleBlockType.CODE,
-            code: '<!DOCTYPE html>\n<html>\n  <body>\n    <p id="hello"></p>\n\n    <script>\n      document.getElementById("hello").innerHTML = "Hello, world!";\n    </script>\n  </body>\n</html>;',
-        },
-        {
-            id: '5',
-            type: ArticleBlockType.TEXT,
-            title: 'Заголовок этого блока',
-            paragraphs: [
-                'Программа, которую по традиции называют «Hello, world!», очень проста. Она выводит куда-либо фразу «Hello, world!», или другую подобную, средствами некоего языка.',
-                'Существуют и другие способы запуска JS-кода в браузере. Так, если говорить об обычном использовании программ на JavaScript, они загружаются в браузер для обеспечения работы веб-страниц. Как правило, код оформляют в виде отдельных файлов с расширением .js, которые подключают к веб-страницам, но программный код можно включать и непосредственно в код страницы. Всё это делается с помощью тега <script>. Когда браузер обнаруживает такой код, он выполняет его. Подробности о теге script можно посмотреть на сайте w3school.com. В частности, рассмотрим пример, демонстрирующий работу с веб-страницей средствами JavaScript, приведённый на этом ресурсе. Этот пример можно запустить и средствами данного ресурса (ищите кнопку Try it Yourself), но мы поступим немного иначе. А именно, создадим в каком-нибудь текстовом редакторе (например — в VS Code или в Notepad++) новый файл, который назовём hello.html, и добавим в него следующий код:',
-            ],
-        },
-        {
-            id: '2',
-            type: ArticleBlockType.IMAGE,
-            src: 'https://hsto.org/r/w1560/getpro/habr/post_images/d56/a02/ffc/d56a02ffc62949b42904ca00c63d8cc1.png',
-            title: 'Рисунок 1 - скриншот сайта',
-        },
-        {
-            id: '3',
-            type: ArticleBlockType.CODE,
-            code: "const path = require('path');\n\nconst server = jsonServer.create();\n\nconst router = jsonServer.router(path.resolve(__dirname, 'db.json'));\n\nserver.use(jsonServer.defaults({}));\nserver.use(jsonServer.bodyParser);",
-        },
-        {
-            id: '7',
-            type: ArticleBlockType.TEXT,
-            title: 'Заголовок этого блока',
-            paragraphs: [
-                'JavaScript — это язык, программы на котором можно выполнять в разных средах. В нашем случае речь идёт о браузерах и о серверной платформе Node.js. Если до сих пор вы не написали ни строчки кода на JS и читаете этот текст в браузере, на настольном компьютере, это значит, что вы буквально в считанных секундах от своей первой JavaScript-программы.',
-                'Существуют и другие способы запуска JS-кода в браузере. Так, если говорить об обычном использовании программ на JavaScript, они загружаются в браузер для обеспечения работы веб-страниц. Как правило, код оформляют в виде отдельных файлов с расширением .js, которые подключают к веб-страницам, но программный код можно включать и непосредственно в код страницы. Всё это делается с помощью тега <script>. Когда браузер обнаруживает такой код, он выполняет его. Подробности о теге script можно посмотреть на сайте w3school.com. В частности, рассмотрим пример, демонстрирующий работу с веб-страницей средствами JavaScript, приведённый на этом ресурсе. Этот пример можно запустить и средствами данного ресурса (ищите кнопку Try it Yourself), но мы поступим немного иначе. А именно, создадим в каком-нибудь текстовом редакторе (например — в VS Code или в Notepad++) новый файл, который назовём hello.html, и добавим в него следующий код:',
-            ],
-        },
-        {
-            id: '8',
-            type: ArticleBlockType.IMAGE,
-            src: 'https://hsto.org/r/w1560/getpro/habr/post_images/d56/a02/ffc/d56a02ffc62949b42904ca00c63d8cc1.png',
-            title: 'Рисунок 1 - скриншот сайта',
-        },
-        {
-            id: '9',
-            type: ArticleBlockType.TEXT,
-            title: 'Заголовок этого блока',
-            paragraphs: [
-                'JavaScript — это язык, программы на котором можно выполнять в разных средах. В нашем случае речь идёт о браузерах и о серверной платформе Node.js. Если до сих пор вы не написали ни строчки кода на JS и читаете этот текст в браузере, на настольном компьютере, это значит, что вы буквально в считанных секундах от своей первой JavaScript-программы.',
-            ],
-        },
+    type: [
+      "IT"
     ],
-};
+    blocks: [
+      {
+        id: "1",
+        type: "TEXT",
+        title: "Overview of HTML5 features introduced in Codecademy's Make a Website course.",
+        paragraphs: [
+          "Web languages need regular upgrades in order to stay current and solve new problems faced by web developers. HTML5 is the latest version of HTML. Below are some HTML5 features you will encounter as you learn with Codecademy."
+        ]
+      },
+      {
+        id: "2",
+        type: "TEXT",
+        title: "video",
+        paragraphs: [
+          "The video element allows you to easily stream video from a website."
+        ]
+      },
+      {
+        id: "3",
+        type: "CODE",
+        code: "<video width=\"450px\" height=\"350px\" controls>\n  <source src=\"video-url.mp4\" type=\"video/mp4\">\n</video>"
+      },
+      {
+        id: "4",
+        type: "TEXT",
+        paragraphs: [
+          "In the HTML above, width and height set the dimensions for the video element. The controls attribute creates playback buttons such as “Play” and “Pause”. The source src tag provides the URL where the video is hosted and type specifies the video’s type, in this case, “video/mp4”."
+        ]
+      },
+      {
+        id: "5",
+        type: "TEXT",
+        title: "figure",
+        paragraphs: [
+          "Figure elements can be used to display visual content, such as photos, illustrations, diagrams or code snippets."
+        ]
+      },
+      {
+        id: "6",
+        type: "CODE",
+        code: "<figure class=\"gallery-item\">\n  <img src=\"image-1.png\">\n</figure>\n<figure class=\"gallery-item\">\n  <img src=\"image-2.png\">\n</figure>"
+      },
+      {
+        id: "7",
+        type: "TEXT",
+        paragraphs: [
+          "In the example code above, figure elements have the class “gallery-item”, and each contains an img element."
+        ]
+      },
+      {
+        id: "8",
+        type: "TEXT",
+        title: "section",
+        paragraphs: [
+          "Section elements, like divs, can be used to organize webpage content into thematic groups."
+        ]
+      },
+      {
+        id: "9",
+        type: "CODE",
+        code: "<section class=\"contact-form\">\n  <h2>Contact Us</h2>\n<form>\n    ...\n  </form>\n</section>"
+      },
+      {
+        id: "10",
+        type: "TEXT",
+        paragraphs: [
+          "Above, a section element is used to organize h2 and form elements for a website’s “Contact Us” feature."
+        ]
+      },
+      {
+        id: "11",
+        type: "TEXT",
+        title: "nav",
+        paragraphs: [
+          "The nav element is used for the part of a website that links to other pages on the site. The links can be organized a number of ways. Below, the links are displayed within paragraph elements. An unordered list could also be used."
+        ]
+      },
+      {
+        id: "12",
+        type: "CODE",
+        code: "<nav>\n  <p><a href=\"login.html\">Log In</a></p>\n  <p><a href=\"signup.html\">Sign Up</a></p>\n  <p><a href=\"contact.html\">Contact Us</a></p>\n</nav>"
+      },
+      {
+        id: "13",
+        type: "TEXT",
+        title: "header",
+        paragraphs: [
+          "The header element can be used to group together introductory elements on a website, such as a company logo, navigation items, and sometimes, a search form."
+        ]
+      },
+      {
+        id: "14",
+        type: "CODE",
+        code: "<header>\n  <img src=\"company-logo.png\">\n  <nav>\n    <p><a href=\"login.html\">Log In</a></p>\n    <p><a href=\"signup.html\">Sign Up</a></p>\n    <p><a href=\"contact.html\">Contact Us</a></p>\n  </nav>\n</header>"
+      },
+      {
+        id: "15",
+        type: "TEXT",
+        paragraphs: [
+          "Above, the header element encloses the img and nav."
+        ]
+      },
+      {
+        id: "16",
+        type: "TEXT",
+        title: "footer",
+        paragraphs: [
+          "The footer element is typically found at the bottom or foot of a webpage. It can contain copyright information, links to social media and additional site navigation items."
+        ]
+      },
+      {
+        id: "17",
+        type: "CODE",
+        code: "<footer>\n  <p>&copy; Acme Granola Corporation 2016<p>\n  <div class=\"social\">\n     <a href=\"#\"><img src=\"instagram-icon.png\"></a>\n    <a href=\"#\"><img src=\"facebook-icon.png\"></a>\n    <a href=\"#\"><img src=\"twitter-icon.png\"></a>\n  </div>\n</footer>"
+      },
+      {
+        id: "15",
+        type: "TEXT",
+        paragraphs: [
+          "Above, between <footer> and </footer>, copyright information is contained in the p element, and social media links are contained within the div with class “social”."
+        ]
+      }
+    ]
+} as Article;
 
 export const Normal = Template.bind({});
 Normal.args = {};

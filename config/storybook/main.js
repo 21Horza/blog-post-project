@@ -10,9 +10,6 @@ module.exports = {
     name: '@storybook/react-webpack5',
     options: {}
   },
-  features: {
-    storyStoreV7: false,
-  },
   docs: {
     autodocs: true
   }
