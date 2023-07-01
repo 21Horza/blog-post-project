@@ -1,4 +1,3 @@
-import { useTranslation } from 'react-i18next';
 import { memo, useCallback, useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import { classNames } from '@/shared/lib/classNames/classNames';
@@ -37,7 +36,6 @@ const reducers: ReducerList = {
 export const ArticleDetails = memo((props: ArticleDetailsProps) => {
     const { className, id } = props;
 
-    const { t } = useTranslation();
     const dispatch = useAppDispatch();
     const isLoading = useSelector(getArticleDetailsIsLoading);
     const article = useSelector(getArticleDetailsData);

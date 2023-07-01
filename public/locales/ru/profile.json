@@ -11,12 +11,12 @@
   "Name": "Имя",
   "No data": "Отсутствуеют данные пользователя",
   "Profile": "Профиль",
-  "Refresh the page": "Refresh the page",
+  "Refresh the page": "Обновить страницу",
   "Save": "Сохранить",
   "Server error": "Ошибка сервера",
   "Set country": " Выберите страну",
-  "Set currency": "Set currency",
-  "Set value": "Выберите валюту",
+  "Set currency": "Выберите валюту",
+  "Set value": "Выберите значение",
   "Surname": "Фамилия",
   "Username": "Имя пользователя"
 }
