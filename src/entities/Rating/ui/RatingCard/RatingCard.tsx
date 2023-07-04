@@ -80,13 +80,16 @@ export const RatingCard = memo((props: RatingCardProps) => {
                         {modalContent}
                         <HStack max gap="16" justify="end">
                             <Button
-                            data-testid="RatingCard.Close"
-                             onClick={cancelHandle} theme={ButtonTheme.OUTLINE_RED}>
+                                data-testid="RatingCard.Close"
+                                onClick={cancelHandle}
+                                theme={ButtonTheme.OUTLINE_RED}
+                            >
                                 {t('Close')}
                             </Button>
-                            <Button 
-                            data-testid="RatingCard.Send"
-                            onClick={acceptHandle}>
+                            <Button
+                                data-testid="RatingCard.Send"
+                                onClick={acceptHandle}
+                            >
                                 {t('Send')}
                             </Button>
                         </HStack>

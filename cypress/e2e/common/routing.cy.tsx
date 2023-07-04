@@ -17,20 +17,20 @@ describe('Routing', () => {
         });
     });
     describe('User IS authed', () => {
-      beforeEach(() => {
+        beforeEach(() => {
         /**
          * Custom login function
          * @example cy.login('user', 'password')
          */
-        cy.login();
-      })
-      it('Open the profile page', () => {
-        cy.visit('/profile/4');
-        cy.get(selectByTestId('ProfilePage')).should('exist');
-      });
-      it('Open the articles page', () => {
-        cy.visit('/articles');
-        cy.get(selectByTestId('ArticlesPage')).should('exist');
-      });
+            cy.login();
+        });
+        it('Open the profile page', () => {
+            cy.visit('/profile/4');
+            cy.get(selectByTestId('ProfilePage')).should('exist');
+        });
+        it('Open the articles page', () => {
+            cy.visit('/articles');
+            cy.get(selectByTestId('ArticlesPage')).should('exist');
+        });
     });
 });

@@ -1,4 +1,4 @@
-export const addComment = (text: string) => { 
+export const addComment = (text: string) => {
     cy.getByTestId('AddCommentForm.Input').type(text);
     cy.getByTestId('AddCommentForm.Button').click();
 };
@@ -9,4 +9,4 @@ declare global {
         addComment(text: string): Chainable<void>;
       }
     }
-};
+}

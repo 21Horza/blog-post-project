@@ -1,4 +1,4 @@
-import { Article } from "../../../src/entities/Article";
+import { Article } from '../../../src/entities/Article';
 
 const defaultArticle = {
     title: 'TEST ARTICLE',
@@ -13,20 +13,20 @@ const defaultArticle = {
     blocks: [],
 };
 
-export const createArticle = (article?: Article) => { 
+export const createArticle = (article?: Article) => {
     return cy.request({
         method: 'POST',
-        url: `http://localhost:8000/articles`,
-        headers: {Authorization: 'asas'},
+        url: 'http://localhost:8000/articles',
+        headers: { Authorization: 'asas' },
         body: article ?? defaultArticle,
-    }).then(resp => resp.body);
+    }).then((resp) => resp.body);
 };
 
 export const deleteArticle = (articleId: string) => {
     return cy.request({
         method: 'DELETE',
         url: `http://localhost:8000/articles/${articleId}`,
-        headers: {Authorization: 'asas'},
+        headers: { Authorization: 'asas' },
     });
 };
 
@@ -37,4 +37,4 @@ declare global {
         deleteArticle(articleId: string): Chainable<void>;
       }
     }
-};
+}

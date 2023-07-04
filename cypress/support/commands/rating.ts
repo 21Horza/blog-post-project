@@ -1,7 +1,7 @@
-export const setRate = (starsCount: number = 5, feedback: string = 'feedback') => { 
+export const setRate = (starsCount: number = 5, feedback: string = 'feedback') => {
     cy.getByTestId(`StarRating.${starsCount}`).click();
-    cy.getByTestId(`RatingCard.Input`).type(feedback);
-    cy.getByTestId(`RatingCard.Send`).click();
+    cy.getByTestId('RatingCard.Input').type(feedback);
+    cy.getByTestId('RatingCard.Send').click();
 };
 
 declare global {
@@ -10,4 +10,4 @@ declare global {
         setRate(starsCount: number, feedback: string): Chainable<void>;
       }
     }
-};
+}

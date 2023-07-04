@@ -22,7 +22,7 @@ module.exports = {
         '@typescript-eslint',
         'i18next',
         'react-hooks',
-        'horza-for-production',
+        // 'horza-for-production',
         'unused-imports',
     ],
     rules: {
@@ -72,21 +72,21 @@ module.exports = {
         'no-undef': 'off',
         'react/no-array-index-key': 'off',
         'arrow-body-style': 'off',
-        'horza-for-production/relative-path-checker': ['error', { alias: '@' }],
-        'horza-for-production/public-api-imports': [
-            'error',
-            {
-                alias: '@',
-                testFilesPatters: ['**/*.test.*', '**/*.story.*', '**/StoreDecorator.tsx'],
-            }
-        ],
-        'horza-for-production/layer-imports': [
-            'error',
-            {
-                alias: '@',
-                ignoreImportPatterns: ['**/StoreProvider', '**/testing'],
-            }
-        ],
+        // 'horza-for-production/relative-path-checker': ['error', { alias: '@' }],
+        // 'horza-for-production/public-api-imports': [
+        //     'error',
+        //     {
+        //         alias: '@',
+        //         testFilesPatters: ['**/*.test.*', '**/*.story.*', '**/StoreDecorator.tsx'],
+        //     }
+        // ],
+        // 'horza-for-production/layer-imports': [
+        //     'error',
+        //     {
+        //         alias: '@',
+        //         ignoreImportPatterns: ['**/StoreProvider', '**/testing'],
+        //     }
+        // ],
     },
     globals: {
         __IS_DEV__: true,

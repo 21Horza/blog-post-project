@@ -1,0 +1,11 @@
+{
+    "id": "1",
+    "first": "Test",
+    "lastname": "User",
+    "age": 100,
+    "currency": "USD",
+    "country": "USA",
+    "city": "Colorado",
+    "username": "testuser",
+    "avatar": "https://cag.gov.in/uploads/PhotoGallery/PG-Photo-05ebbf5c1ac24e7-97634843.png"
+}

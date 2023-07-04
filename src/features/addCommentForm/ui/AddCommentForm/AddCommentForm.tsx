@@ -44,10 +44,10 @@ const AddCommentForm = memo((props: AddCommentFormProps) => {
 
     return (
         <DynamicModuleLoader reducers={reduscers}>
-            <HStack 
+            <HStack
                 data-testid="AddCommentForm"
-                justify="between" 
-                max 
+                justify="between"
+                max
                 className={classNames(cls.AddCommentForm, {}, [className])}
             >
                 <Input
