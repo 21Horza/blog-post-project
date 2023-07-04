@@ -11,6 +11,7 @@ import { ArticlesPageFilters } from '../ArticlesPageFilters/ArticlesPageFilters'
 import { ArticleInfiniteList } from '../ArticleInfiniteList/ArticleInfiniteList';
 import { useInitialEffect } from '@/shared/lib/hooks/useInitialEffect/useInitialEffect';
 import { initArticlesPage } from '../../model/services/initArticlesPage/initArticlesPage';
+import { useArticleItemById } from '../../model/selectors/articlesPageSelectors';
 
 interface ArticlesPageProps {
     className?: string;
@@ -26,6 +27,7 @@ const ArticlesPage = (props: ArticlesPageProps) => {
   } = props;
   const dispatch = useAppDispatch();
   const [searchParams] = useSearchParams();
+  const data = useArticleItemById('1');
 
   const onLoadNextPart = useCallback(() => {
     dispatch(fetchNextArticlesPage());
