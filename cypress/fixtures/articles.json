@@ -1,0 +1,962 @@
+[
+    {
+      "title": "TEST ARTICLE",
+      "subtitle": "Cool features in HTML5",
+      "img": "https://play-lh.googleusercontent.com/RslBy1o2NEBYUdRjQtUqLbN-ZM2hpks1mHPMiHMrpAuLqxeBPcFSAjo65nQHbTA53YYn",
+      "views": 100,
+      "createdAt": "01.01.2001",
+      "userId": "1",
+      "type": [
+        "IT"
+      ],
+      "blocks": [],
+      "id": "frOi4io",
+      "user": {
+        "id": "1",
+        "username": "admin",
+        "password": "123",
+        "roles": [
+          "ADMIN"
+        ],
+        "avatar": "https://imgv3.fotor.com/images/blog-cover-image/10-profile-picture-ideas-to-make-you-stand-out.jpg"
+      }
+    },
+    {
+      "id": "1",
+      "title": "HTML5 Features",
+      "subtitle": "Cool features in HTML5",
+      "img": "https://play-lh.googleusercontent.com/RslBy1o2NEBYUdRjQtUqLbN-ZM2hpks1mHPMiHMrpAuLqxeBPcFSAjo65nQHbTA53YYn",
+      "views": 1022,
+      "createdAt": "10.01.2023",
+      "userId": "1",
+      "type": [
+        "IT"
+      ],
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "title": "Overview of HTML5 features introduced in Codecademy's Make a Website course.",
+          "paragraphs": [
+            "Web languages need regular upgrades in order to stay current and solve new problems faced by web developers. HTML5 is the latest version of HTML. Below are some HTML5 features you will encounter as you learn with Codecademy."
+          ]
+        },
+        {
+          "id": "2",
+          "type": "TEXT",
+          "title": "video",
+          "paragraphs": [
+            "The video element allows you to easily stream video from a website."
+          ]
+        },
+        {
+          "id": "3",
+          "type": "CODE",
+          "code": "<video width=\"450px\" height=\"350px\" controls>\n  <source src=\"video-url.mp4\" type=\"video/mp4\">\n</video>"
+        },
+        {
+          "id": "4",
+          "type": "TEXT",
+          "paragraphs": [
+            "In the HTML above, width and height set the dimensions for the video element. The controls attribute creates playback buttons such as “Play” and “Pause”. The source src tag provides the URL where the video is hosted and type specifies the video’s type, in this case, “video/mp4”."
+          ]
+        },
+        {
+          "id": "5",
+          "type": "TEXT",
+          "title": "figure",
+          "paragraphs": [
+            "Figure elements can be used to display visual content, such as photos, illustrations, diagrams or code snippets."
+          ]
+        },
+        {
+          "id": "6",
+          "type": "CODE",
+          "code": "<figure class=\"gallery-item\">\n  <img src=\"image-1.png\">\n</figure>\n<figure class=\"gallery-item\">\n  <img src=\"image-2.png\">\n</figure>"
+        },
+        {
+          "id": "7",
+          "type": "TEXT",
+          "paragraphs": [
+            "In the example code above, figure elements have the class “gallery-item”, and each contains an img element."
+          ]
+        },
+        {
+          "id": "8",
+          "type": "TEXT",
+          "title": "section",
+          "paragraphs": [
+            "Section elements, like divs, can be used to organize webpage content into thematic groups."
+          ]
+        },
+        {
+          "id": "9",
+          "type": "CODE",
+          "code": "<section class=\"contact-form\">\n  <h2>Contact Us</h2>\n<form>\n    ...\n  </form>\n</section>"
+        },
+        {
+          "id": "10",
+          "type": "TEXT",
+          "paragraphs": [
+            "Above, a section element is used to organize h2 and form elements for a website’s “Contact Us” feature."
+          ]
+        },
+        {
+          "id": "11",
+          "type": "TEXT",
+          "title": "nav",
+          "paragraphs": [
+            "The nav element is used for the part of a website that links to other pages on the site. The links can be organized a number of ways. Below, the links are displayed within paragraph elements. An unordered list could also be used."
+          ]
+        },
+        {
+          "id": "12",
+          "type": "CODE",
+          "code": "<nav>\n  <p><a href=\"login.html\">Log In</a></p>\n  <p><a href=\"signup.html\">Sign Up</a></p>\n  <p><a href=\"contact.html\">Contact Us</a></p>\n</nav>"
+        },
+        {
+          "id": "13",
+          "type": "TEXT",
+          "title": "header",
+          "paragraphs": [
+            "The header element can be used to group together introductory elements on a website, such as a company logo, navigation items, and sometimes, a search form."
+          ]
+        },
+        {
+          "id": "14",
+          "type": "CODE",
+          "code": "<header>\n  <img src=\"company-logo.png\">\n  <nav>\n    <p><a href=\"login.html\">Log In</a></p>\n    <p><a href=\"signup.html\">Sign Up</a></p>\n    <p><a href=\"contact.html\">Contact Us</a></p>\n  </nav>\n</header>"
+        },
+        {
+          "id": "15",
+          "type": "TEXT",
+          "paragraphs": [
+            "Above, the header element encloses the img and nav."
+          ]
+        },
+        {
+          "id": "16",
+          "type": "TEXT",
+          "title": "footer",
+          "paragraphs": [
+            "The footer element is typically found at the bottom or foot of a webpage. It can contain copyright information, links to social media and additional site navigation items."
+          ]
+        },
+        {
+          "id": "17",
+          "type": "CODE",
+          "code": "<footer>\n  <p>&copy; Acme Granola Corporation 2016<p>\n  <div class=\"social\">\n     <a href=\"#\"><img src=\"instagram-icon.png\"></a>\n    <a href=\"#\"><img src=\"facebook-icon.png\"></a>\n    <a href=\"#\"><img src=\"twitter-icon.png\"></a>\n  </div>\n</footer>"
+        },
+        {
+          "id": "15",
+          "type": "TEXT",
+          "paragraphs": [
+            "Above, between <footer> and </footer>, copyright information is contained in the p element, and social media links are contained within the div with class “social”."
+          ]
+        }
+      ],
+      "user": {
+        "id": "1",
+        "username": "admin",
+        "password": "123",
+        "roles": [
+          "ADMIN"
+        ],
+        "avatar": "https://imgv3.fotor.com/images/blog-cover-image/10-profile-picture-ideas-to-make-you-stand-out.jpg"
+      }
+    },
+    {
+      "id": "3",
+      "title": "The Evolving Power of JavaScript",
+      "subtitle": "The Evolving Power of JavaScript: Unleashing Creativity and Innovation",
+      "img": "https://miro.medium.com/v2/resize:fit:1200/1*_NvwmTzNVLepSOSr3V7vng.jpeg",
+      "views": 354,
+      "createdAt": "10.06.2022",
+      "userId": "1",
+      "type": [
+        "IT"
+      ],
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "title": "Introduction:",
+          "paragraphs": [
+            "JavaScript, the ubiquitous programming language, has revolutionized web development and transformed the digital landscape over the years. From being primarily used for adding interactivity to web pages, JavaScript has evolved into a versatile and powerful language that enables developers to create complex applications, build robust server-side systems, and even develop mobile and desktop applications. In this article, we will explore the incredible capabilities of JavaScript and how it continues to shape the future of software development."
+          ]
+        },
+        {
+          "id": "2",
+          "type": "TEXT",
+          "title": "1. Client-Side Domination:",
+          "paragraphs": [
+            "JavaScript's greatest strength lies in its ability to run directly in the browser, making it the cornerstone of modern web development. With the introduction of HTML5 and advanced APIs, JavaScript has become the language of choice for crafting dynamic and interactive web experiences. From single-page applications (SPAs) built with frameworks like React, Vue.js, or Angular to rich media applications and games, JavaScript empowers developers to create immersive user interfaces that rival traditional desktop applications."
+          ]
+        },
+        {
+          "id": "3",
+          "type": "TEXT",
+          "title": "2. Server-Side Prowess:",
+          "paragraphs": [
+            "JavaScript has broken out of the browser and made its way onto the server-side with the advent of Node.js. Node.js allows developers to build scalable, high-performance web applications using JavaScript on both the client and server, fostering code reuse and accelerating development cycles. With Node.js, JavaScript can handle server-side logic, data processing, real-time communication, and more, opening up a whole new realm of possibilities for developers."
+          ]
+        },
+        {
+          "id": "4",
+          "type": "TEXT",
+          "title": "3. The Rise of Full-Stack JavaScript:",
+          "paragraphs": [
+            "The emergence of Node.js has given birth to the concept of full-stack JavaScript development, where developers can utilize a single language across the entire technology stack. This unified approach streamlines development processes, reduces context switching, and fosters collaboration between front-end and back-end developers. With frameworks like Express.js and Nest.js, full-stack JavaScript has become a powerful choice for building scalable, end-to-end applications."
+          ]
+        },
+        {
+          "id": "5",
+          "type": "TEXT",
+          "title": "4. Mobile and Desktop Development:",
+          "paragraphs": [
+            "JavaScript has expanded beyond the browser and server to conquer the realm of mobile and desktop application development. With frameworks like React Native and Electron, developers can leverage their existing JavaScript skills to create native-like mobile apps for iOS and Android or cross-platform desktop applications for Windows, macOS, and Linux. This versatility significantly reduces development costs and accelerates time-to-market for software products."
+          ]
+        },
+        {
+          "id": "8",
+          "type": "TEXT",
+          "title": "5. The JavaScript Ecosystem:",
+          "paragraphs": [
+            "JavaScript's success can be attributed, in part, to its thriving ecosystem. The language boasts a vast array of libraries, frameworks, and tools that simplify and enhance the development process. From React for building user interfaces to Redux for state management, from Axios for making HTTP requests to Jest for testing, the JavaScript ecosystem offers developers an extensive toolkit that caters to a broad spectrum of requirements."
+          ]
+        },
+        {
+          "id": "9",
+          "type": "TEXT",
+          "title": "6. Continuous Evolution and Adaptation:",
+          "paragraphs": [
+            "JavaScript continues to evolve rapidly, adapting to new challenges and trends in the industry. The ECMAScript standard, which governs JavaScript, undergoes regular updates, introducing new language features and syntax improvements. These updates, along with the vibrant open-source community, ensure that JavaScript remains at the forefront of innovation, enabling developers to create cutting-edge applications."
+          ]
+        },
+        {
+          "id": "10",
+          "type": "TEXT",
+          "title": "Conclusion",
+          "paragraphs": [
+            "JavaScript's journey from a simple scripting language to a multi-purpose powerhouse has been nothing short of remarkable. Its versatility, scalability, and extensive ecosystem have transformed it into a language of choice for modern software development. As JavaScript continues to evolve and adapt, developers can look forward to even greater possibilities and exciting opportunities to push the boundaries of what can be achieved on the web, mobile, and desktop platforms."
+          ]
+        }
+      ],
+      "user": {
+        "id": "1",
+        "username": "admin",
+        "password": "123",
+        "roles": [
+          "ADMIN"
+        ],
+        "avatar": "https://imgv3.fotor.com/images/blog-cover-image/10-profile-picture-ideas-to-make-you-stand-out.jpg"
+      }
+    },
+    {
+      "id": "6",
+      "title": "The Potential of CRISPR-Cas9",
+      "subtitle": " Exploring the Potential of CRISPR-Cas9: Revolutionizing Genetic Engineering",
+      "img": "https://api.hub.jhu.edu/factory/sites/default/files/styles/soft_crop_1300/public/crispr_cas9_thumb.jpg",
+      "views": 1232,
+      "createdAt": "11.03.2023",
+      "userId": "2",
+      "type": [
+        "SCIENCE"
+      ],
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "paragraphs": [
+            "The discovery of CRISPR-Cas9, a revolutionary gene-editing technology, has opened up new possibilities for scientific research and medical advancements. In this article, we delve into the potential of CRISPR-Cas9 and its impact on genetic engineering. We explore its underlying principles, applications across various fields, and the ethical considerations surrounding its use."
+          ]
+        },
+        {
+          "id": "2",
+          "type": "TEXT",
+          "title": "Understanding CRISPR-Cas9",
+          "paragraphs": [
+            "CRISPR-Cas9 stands for Clustered Regularly Interspaced Short Palindromic Repeats and CRISPR-associated protein 9. It is a precise and versatile gene-editing tool derived from the bacterial immune system. CRISPR-Cas9 allows scientists to modify specific DNA sequences with remarkable accuracy and efficiency, revolutionizing genetic engineering."
+          ]
+        },
+        {
+          "id": "3",
+          "type": "IMAGE",
+          "src": "https://i.ytimg.com/vi/qc6xgb4VXl0/maxresdefault.jpg",
+          "title": "CRISPR-Cas9"
+        },
+        {
+          "id": "4",
+          "type": "TEXT",
+          "title": "The Power of Precision",
+          "paragraphs": [
+            "CRISPR-Cas9 offers unprecedented precision in genome editing. By utilizing a guide RNA molecule, Cas9 enzyme, and a target DNA sequence, scientists can precisely cut and modify DNA at specific locations. This capability opens up endless possibilities for correcting genetic defects, understanding disease mechanisms, and developing targeted therapeutics."
+          ]
+        },
+        {
+          "id": "5",
+          "type": "TEXT",
+          "title": "Applications in Medicine",
+          "paragraphs": [
+            "The medical community has embraced CRISPR-Cas9 for potential breakthroughs in treating genetic diseases. It enables the modification of faulty genes responsible for disorders such as cystic fibrosis, sickle cell anemia, and muscular dystrophy. CRISPR-Cas9 has also shown promise in cancer research, aiding in the identification of oncogenes and the development of targeted therapies."
+          ]
+        },
+        {
+          "id": "6",
+          "type": "IMAGE",
+          "src": "https://ysjournal.com/wp-content/uploads/2018/10/https-lh6-googleusercontent-com-kwwpufcixldebrca.jpeg",
+          "title": "How CRISPR-Cas9 works"
+        },
+        {
+          "id": "7",
+          "type": "TEXT",
+          "title": "Agricultural Advancements",
+          "paragraphs": [
+            "CRISPR-Cas9 has immense potential in agriculture, offering a sustainable approach to enhance crop traits. Scientists can modify plant genomes to improve yield, nutritional value, and resistance to pests and diseases. This technology holds promise for addressing food security challenges and reducing the environmental impact of traditional agricultural practices."
+          ]
+        },
+        {
+          "id": "8",
+          "type": "TEXT",
+          "title": "Ethical Considerations",
+          "paragraphs": [
+            "As with any powerful technology, the use of CRISPR-Cas9 raises important ethical considerations. The ability to edit the human germline, which would impact future generations, prompts ethical debates surrounding safety, unintended consequences, and the potential for misuse. Striking a balance between scientific advancement and responsible use is crucial for harnessing the full potential of CRISPR-Cas9."
+          ]
+        },
+        {
+          "id": "9",
+          "type": "TEXT",
+          "paragraphs": [
+            "CRISPR-Cas9 has revolutionized genetic engineering by offering unprecedented precision, efficiency, and versatility. Its applications in medicine, agriculture, and other scientific fields hold immense promise for addressing genetic diseases, improving crop traits, and driving scientific breakthroughs. However, the ethical considerations surrounding its use require careful examination and regulation. As we move forward, responsible and ethical implementation of CRISPR-Cas9 will be essential to unlock its full potential while safeguarding the well-being of individuals and society as a whole."
+          ]
+        }
+      ],
+      "user": {
+        "id": "2",
+        "username": "user",
+        "password": "123",
+        "roles": [
+          "USER"
+        ],
+        "avatar": "https://inara.cz/data/users/23/23724x1594.jpg"
+      }
+    },
+    {
+      "id": "8",
+      "title": "Enigmatic Dark Matter",
+      "subtitle": " Unveiling the Enigmatic Dark Matter: A Milestone in Astronomy",
+      "img": "https://qph.cf2.quoracdn.net/main-qimg-ddad4c3ce55cd2d625955a95529158ca-lq",
+      "views": 854,
+      "createdAt": "11.12.2021",
+      "userId": "2",
+      "type": [
+        "SCIENCE"
+      ],
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "paragraphs": [
+            "In the realm of astronomy, a recent groundbreaking discovery has rekindled excitement and intrigue among scientists and space enthusiasts alike. Shedding light on the mysterious dark matter, this breakthrough unveils a captivating chapter in our quest to unravel the secrets of the cosmos."
+          ]
+        },
+        {
+          "id": "2",
+          "type": "TEXT",
+          "title": "The Enigma of Dark Matter",
+          "paragraphs": [
+            "For decades, astronomers have grappled with the enigma of dark matter—a perplexing substance that eludes direct observation. Dark matter's gravitational effects on visible matter and its crucial role in shaping the large-scale structure of the universe have been well-established. However, its elusive nature has remained an enduring mystery."
+          ]
+        },
+        {
+          "id": "3",
+          "type": "IMAGE",
+          "src": "https://static.tvtropes.org/pmwiki/pub/images/dark_matter_pie_chart__still_1.jpg",
+          "title": "Mysterious dark matter"
+        },
+        {
+          "id": "4",
+          "type": "TEXT",
+          "title": "The Elusive Evidence",
+          "paragraphs": [
+            "Recently, a team of astrophysicists working on a collaborative project between international observatories made a remarkable breakthrough. By employing innovative observational techniques and advanced data analysis, they unveiled compelling evidence of dark matter's existence."
+          ]
+        },
+        {
+          "id": "5",
+          "type": "TEXT",
+          "title": "Gravitational Lensing: A Cosmic Detective",
+          "paragraphs": [
+            "The researchers harnessed the power of gravitational lensing—an effect predicted by Einstein's general theory of relativity. This phenomenon occurs when the gravitational field of a massive object, such as a galaxy cluster, bends the path of light passing through it. By carefully analyzing the distorted light from distant galaxies, astronomers can indirectly map the distribution of dark matter."
+          ]
+        },
+        {
+          "id": "6",
+          "type": "IMAGE",
+          "src": "https://cdn.shopify.com/s/files/1/1160/8438/products/PIStore_Topic_HeaderImages_E01_DarkMatter_1500x1500.jpg?v=1603820097",
+          "title": "The mystery of dark matter"
+        },
+        {
+          "id": "7",
+          "type": "TEXT",
+          "title": "The Tantalizing Observations",
+          "paragraphs": [
+            "Through meticulous observations using cutting-edge telescopes, the team detected distinct gravitational lensing patterns that can be explained only by the presence of substantial amounts of dark matter. These observations spanned several cosmic structures, including galaxy clusters, confirming the pervasive influence of this enigmatic substance."
+          ]
+        },
+        {
+          "id": "8",
+          "type": "TEXT",
+          "title": "Mapping Dark Matter",
+          "paragraphs": [
+            "By mapping the distribution of dark matter across vast cosmic scales, the researchers unveiled an intricate cosmic web—a web of invisible matter that weaves through the fabric of space. These results provide crucial insights into the formation and evolution of galaxies, as dark matter acts as a gravitational scaffold around which visible matter congregates."
+          ]
+        },
+        {
+          "id": "9",
+          "type": "TEXT",
+          "title": "Implications and Future Endeavors",
+          "paragraphs": [
+            "This groundbreaking discovery opens up new avenues for exploring the properties and nature of dark matter. It deepens our understanding of the fundamental components of the universe and guides the development of novel theoretical models. Additionally, it paves the way for upcoming observatories, such as the James Webb Space Telescope, which will further probe the mysteries of dark matter."
+          ]
+        },
+        {
+          "id": "10",
+          "type": "TEXT",
+          "paragraphs": [
+            "The recent discovery unraveling the mysterious dark matter marks a significant milestone in astronomy. By employing innovative techniques, scientists have illuminated the hidden cosmic scaffolding that shapes our universe. As we delve further into the secrets of dark matter, we inch closer to unlocking the profound mysteries of our cosmos, leaving us in awe of the vast unknown that lies beyond our perception."
+          ]
+        }
+      ],
+      "user": {
+        "id": "2",
+        "username": "user",
+        "password": "123",
+        "roles": [
+          "USER"
+        ],
+        "avatar": "https://inara.cz/data/users/23/23724x1594.jpg"
+      }
+    },
+    {
+      "id": "2",
+      "title": "Rust Blockchain",
+      "subtitle": "How to build a blockchain from scratch in Rust",
+      "img": "https://blog.logrocket.com/wp-content/uploads/2021/11/how-to-build-simple-blockchain-rust.png",
+      "views": 534,
+      "createdAt": "14.02.2023",
+      "userId": "2",
+      "type": [
+        "IT"
+      ],
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "paragraphs": [
+            "2021 was a huge year for cryptocurrencies, NFT’s, and decentralized applications (DAPPs), and 2022 will be even bigger. Blockchain is the underlying technology behind all these technologies.",
+            "Blockchain technology has the potential to change nearly every aspect of our lives from the Finance industry, Travel & mobility, Infrastructures, Healthcare, Public sector, Retail, Agriculture & mining, Education, Communication, Entertainment, and more.",
+            ""
+          ]
+        },
+        {
+          "id": "2",
+          "type": "TEXT",
+          "title": "What is a blockchain?",
+          "paragraphs": [
+            "A blockchain is a decentralized ledger of transactions across a peer-to-peer network, you can also think of a blockchain like a decentralized database that is immutable. A blockchain can be broken down fundamentally into several components e.g Node, Transaction, Block, Chain, and The consensus protocol (proof of work, proof of stake, proof of history).",
+            "If you are anything like me, you learn by building. Now the reason I’m writing this article is to give you a basic overview of how blockchains work by building a blockchain with Rust.",
+            "Sounds good? Let’s get to it."
+          ]
+        },
+        {
+          "id": "3",
+          "type": "TEXT",
+          "title": "Getting Started",
+          "paragraphs": [
+            "Let us start by creating a new Rust project:"
+          ]
+        },
+        {
+          "id": "4",
+          "type": "CODE",
+          "code": "cargo +nightly new blockchain"
+        },
+        {
+          "id": "5",
+          "type": "TEXT",
+          "paragraphs": [
+            "Change to the directory you just created:"
+          ]
+        },
+        {
+          "id": "6",
+          "type": "CODE",
+          "code": "cd blockchain"
+        },
+        {
+          "id": "7",
+          "type": "TEXT",
+          "paragraphs": [
+            "Let’s add the necessary packages we need to build a blockchain:"
+          ]
+        },
+        {
+          "id": "8",
+          "type": "CODE",
+          "code": "[dependencies]\nchrono = \"0.4\"\nserde = { version = \"1.0.106\", features = [\"derive\"] }\nserde_json = \"1.0\"\nsha2 = \"0.10.0\""
+        },
+        {
+          "id": "9",
+          "type": "TEXT",
+          "paragraphs": [
+            "Next, create folder called models, that’s where you will keep most of your blockchain logic. In that folder create two (2) files called blockchain.rs and block.rs."
+          ]
+        },
+        {
+          "id": "10",
+          "type": "TEXT",
+          "paragraphs": [
+            "Import the following packages in both of the files and save them:",
+            "Blockchain.rs"
+          ]
+        },
+        {
+          "id": "11",
+          "type": "CODE",
+          "code": "use chrono::prelude::*;\n// Internal module\nuse super::block::Block;"
+        },
+        {
+          "id": "11",
+          "type": "TEXT",
+          "paragraphs": [
+            "Block.rs"
+          ]
+        },
+        {
+          "id": "12",
+          "type": "CODE",
+          "code": "use super::blockchain::Blockchain;\nuse chrono::prelude::*;\nuse sha2::{Sha256, Digest};\nuse serde::{Deserialize, Serialize};"
+        },
+        {
+          "id": "13",
+          "type": "TEXT",
+          "paragraphs": [
+            "If you noticed we imported use super::block::Block; in our blockchain.rs file, we are just importing the struct located in our block.rs file here, don’t worry I will explain that a bit later.",
+            "After we have imported the necessary packages let’s create a type in our blockchain.rs file called Blocks:"
+          ]
+        },
+        {
+          "id": "14",
+          "type": "CODE",
+          "code": "type Blocks = Vec<Block>;"
+        },
+        {
+          "id": "15",
+          "type": "TEXT",
+          "paragraphs": [
+            "Next, let’s create a Blockchain type in blockchain.rs and an empty implementation for our Blockchain type:"
+          ]
+        },
+        {
+          "id": "16",
+          "type": "CODE",
+          "code": "// `Blockchain` A struct that represents the blockchain.\n#[derive(Debug)]\npub struct Blockchain {\n  // The first block to be added to the chain.\n  pub genesis_block: Block,\n  // The storage for blocks.\n  pub chain: Blocks,\n  // Minimum amount of work required to validate a block.\n  pub difficulty: usize\n}\nimpl Blockchain {}"
+        },
+        {
+          "id": "17",
+          "type": "TEXT",
+          "paragraphs": [
+            "Next, let’s create a Block type in block.rs and an empty implementation for our Block type:"
+          ]
+        },
+        {
+          "id": "18",
+          "type": "CODE",
+          "code": "#[derive(Debug, Clone, Serialize, Deserialize)]\npub struct Block {\n   // The index in which the current block is stored.\n   pub index: u64,\n   // The time the current block is created.\n   pub timestamp: u64,\n   \n   // The block's proof of work.\n   pub proof_of_work: u64,\n   // The previous block hash.\n   pub previous_hash: String,\n   // The current block hash.\n   pub hash: String\n}\nimpl Block {}"
+        },
+        {
+          "id": "19",
+          "type": "TEXT",
+          "paragraphs": [
+            "Creating the genesis block:",
+            "The genesis block is the first block created in a blockchain. Let’s create a function that creates a genesis block for our blockchain and returns a new instance of the Blockchain type.",
+            "Add the following code in our Blockchain implementation in blockchain.rs:"
+          ]
+        },
+        {
+          "id": "20",
+          "type": "TEXT",
+          "paragraphs": [
+            "In the code above, we did the following:",
+            "",
+            "   Created our genesis_block instance.",
+            "   Added the genesis_block we created to the chain in our Blockchain type.",
+            "   Returned an instance of the Blockchain type.",
+            "",
+            "In the genesis_block instance we created, notice how we set our previous_hash key to an empty string value (String::default()) that’s because there would be no previous block since the genesis block is the first block in the blockchain.",
+            "Also notice we made the hash of our genesis_block to be an empty string (“”) that’s because we haven’t calculated the hash value for our genesis block yet."
+          ]
+        },
+        {
+          "id": "21",
+          "type": "TEXT",
+          "title": "Generating the hash of a block",
+          "paragraphs": [
+            "A hash is generated with the help of cryptography and current information present in the block.",
+            "Let's create a function in our block implementation in the block.rs file we created called calculate_hash() :"
+          ]
+        },
+        {
+          "id": "22",
+          "type": "CODE",
+          "code": "// Calculate block hash.\npub fn calculate_hash(&self) -> String {\n  let mut block_data = self.clone();\n  block_data.hash = String::default();\n  let serialized_block_data = serde_json::to_string(&block_data).unwrap();\n  // Calculate and return SHA-256 hash value.\n  let mut hasher = Sha256::new();\n  hasher.update(serialized_block_data);\n \n  let result = hasher.finalize();\n  format!(\"{:x}\", result)\n}"
+        },
+        {
+          "id": "23",
+          "type": "TEXT",
+          "paragraphs": [
+            "In the code above, we did the following:",
+            "   Converted the block's data to JSON format.",
+            "   Hashed the block's data with the SHA256 algorithm.",
+            "   Returned the hashing result in base16."
+          ]
+        },
+        {
+          "id": "24",
+          "type": "TEXT",
+          "title": "Creating a new block",
+          "paragraphs": [
+            "Great!, we have implemented functionalities for creating our genesis block and calculating the block hashes of our blocks.",
+            "Now let's add the functionality for adding new blocks to the blockchain, in our blockchain.rs file add this function to the Blockchain type implementation:"
+          ]
+        },
+        {
+          "id": "25",
+          "type": "CODE",
+          "code": "pub fn add_block(&mut self, nonce: String) {\n  let new_block = Block::new(\n    self.chain.len() as u64,\n    nonce,\n    self.chain[&self.chain.len() - 1].previous_hash.clone()\n  );\n  new_block.mine(self.clone());\n  self.chain.push(new_block.clone());\n  println!(\"New block added to chain -> {:?}\", new_block);\n}"
+        },
+        {
+          "id": "26",
+          "type": "TEXT",
+          "paragraphs": [
+            "Here we did the following:",
+            "Created an add_block function that takes in an argument called &mut self (instance of the Blockchain type).",
+            "Created our instance of the Block type.",
+            "Mined a block hash using the Block type's mine function.",
+            "Added the new block to the chain of blocks.",
+            "Next in our block.rs file add the following code in the Block type implementation:"
+          ]
+        },
+        {
+          "id": "27",
+          "type": "CODE",
+          "code": "// Create a new block. The hash will be calculated and set automatically.\npub fn new (\n index: u64,\n previous_hash: String,\n) -> Self {\n   // Current block to be created.\n   let mut block = Block {\n      index: 0,\n      timestamp: Utc::now().timestamp_millis() as u64,\n      proof_of_work: u64::default(),\n      previous_hash: String::default(),\n      hash: String::default(),\n   };\n\n   block\n}"
+        },
+        {
+          "id": "28",
+          "type": "TEXT",
+          "paragraphs": [
+            "Here we did the following:",
+            "Created a function called new() that takes in three arguments index and previous_hash.",
+            "Created our instance of the Block type.",
+            "Generated a block hash for our block.",
+            "Returned an instance of the Block type."
+          ]
+        },
+        {
+          "id": "28",
+          "type": "TEXT",
+          "title": "Mining new block",
+          "paragraphs": [
+            "We have successfully implemented functionality for creating a new block.",
+            "Let's implement functionality for mining new blocks. The process of mining new blocks involves generating a SHA256 hash that starts with a desired number of 0s which would be the mining difficulty miners have to solve to mine a new block.",
+            "Let's create a function in our block.rs file inside our Block type implementation:"
+          ]
+        },
+        {
+          "id": "29",
+          "type": "CODE",
+          "code": "// Mine block hash.\npub fn mine (&mut self, blockchain: Blockchain) {\n  loop {\n    if !self.hash.starts_with(&\"0\".repeat(blockchain.difficulty)) {\n      self.proof_of_work += 1;\n      self.hash = self.generate_block_hash();\n    } else {\n       break\n    }\n  }\n}"
+        },
+        {
+          "id": "30",
+          "type": "TEXT",
+          "paragraphs": [
+            "Great job, we are done with implementing our blockchain, now let's test it out.",
+            "Let's create a file called mod.rs in our models folder and save the following code:"
+          ]
+        },
+        {
+          "id": "31",
+          "type": "CODE",
+          "code": "pub mod block;\npub mod blockchain;"
+        },
+        {
+          "id": "32",
+          "type": "TEXT",
+          "paragraphs": [
+            "All we are doing here is making the files we created earlier blockchain.rs and block.rs publicly accessible in our main.rs file.",
+            "Now let's paste the following code in our main.rs file:"
+          ]
+        },
+        {
+          "id": "33",
+          "type": "CODE",
+          "code": "mod models;\nfn main() {\n   let difficulty = 1;\n   let mut blockchain = models::blockchain::Blockchain::new(difficulty);\n\n   models::blockchain::Blockchain::add_block(&mut blockchain);\n}"
+        },
+        {
+          "id": "34",
+          "type": "TEXT",
+          "paragraphs": [
+            "Now to initiate a transaction run cargo +nightly run in your terminal."
+          ]
+        },
+        {
+          "id": "35",
+          "type": "TEXT",
+          "title": "Conclusion",
+          "paragraphs": [
+            "In this tutorial you've learned how to create a simple blockchain from scratch with Rust."
+          ]
+        }
+      ],
+      "user": {
+        "id": "2",
+        "username": "user",
+        "password": "123",
+        "roles": [
+          "USER"
+        ],
+        "avatar": "https://inara.cz/data/users/23/23724x1594.jpg"
+      }
+    },
+    {
+      "id": "7",
+      "title": "TypeScript life hacks",
+      "subtitle": "Here are three TypeScript life hacks with code examples",
+      "img": "https://res.cloudinary.com/practicaldev/image/fetch/s--cKHeGzUo--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/uf3a8y7xh8aroo95qocz.jpg",
+      "views": 1786,
+      "createdAt": "14.02.2023",
+      "userId": "2",
+      "type": [
+        "IT"
+      ],
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "title": "Optional Chaining",
+          "paragraphs": [
+            "Optional chaining allows you to safely access properties or methods of an object without worrying about potential null or undefined values. It helps avoid errors when accessing nested properties. Here's an example:"
+          ]
+        },
+        {
+          "id": "2",
+          "type": "CODE",
+          "code": "interface Person {\n  name: string;\n  address?: {\n    city: string;\n    \nstreet?: string;\n  };\n}\n\nconst person: Person = {\n  name: \"John Doe\",\n  address: {\n    city: \"New York\",\n  },\n};\n\n\n// Accessing nested properties using optional chaining\nconst streetName = person.address?.street?.toUpperCase();\nconsole.log(streetName); // Output: undefined"
+        },
+        {
+          "id": "3",
+          "type": "TEXT",
+          "paragraphs": [
+            "In the example above, the streetName variable will be undefined since the street property does not exist in the address object."
+          ]
+        },
+        {
+          "id": "4",
+          "type": "TEXT",
+          "title": "Destructuring with Default Values",
+          "paragraphs": [
+            "You can use destructuring assignment with default values to provide fallbacks when a property is undefined. This helps handle undefined or missing values gracefully. Here's an example:"
+          ]
+        },
+        {
+          "id": "5",
+          "type": "CODE",
+          "code": "interface Rectangle {\n  width?: number;\n  height?: number;\n  }\n\n\nfunction calculateArea(rectangle: Rectangle) {\n  const { width = 0, height = 0 } = rectangle;\n  return width * height;\n}\n\n\nconst rectangle: Rectangle = {\n  width: 5,\n};\n\n\nconst area = calculateArea(rectangle);\nconsole.log(area); // Output: 0"
+        },
+        {
+          "id": "6",
+          "type": "TEXT",
+          "paragraphs": [
+            "In the above example, if the width or height property is missing in the rectangle object, the destructuring assignment assigns the default value of 0, ensuring that the calculation doesn't result in NaN."
+          ]
+        },
+        {
+          "id": "7",
+          "type": "TEXT",
+          "paragraphs": [
+            "In the above example, if the width or height property is missing in the rectangle object, the destructuring assignment assigns the default value of 0, ensuring that the calculation doesn't result in NaN."
+          ]
+        },
+        {
+          "id": "8",
+          "type": "TEXT",
+          "title": "Using Type Guards",
+          "paragraphs": [
+            "Type guards allow you to narrow down the type of a variable within a conditional block, providing better type safety. It helps avoid runtime errors by narrowing down the possibilities of what a variable can be. Here's an example:"
+          ]
+        },
+        {
+          "id": "9",
+          "type": "CODE",
+          "code": "interface Cat {\n  name: string;\n  meow: () => void;\n}\n\n\ninterface Dog {\n  name: string;\n  bark: () => void;\n}\n\n\nfunction makeSound(animal: Cat | Dog) {\n  if (\"meow\" in animal) {\n    animal.meow();\n  } else {\n    animal.bark();\n  }\n}\n\n\nconst cat: Cat = {\n  name: \"Whiskers\",\n  meow: () => console.log(\"Meow!\"),\n};\n\n\nconst dog: Dog = {\n  name: \"Buddy\",\n  bark: () => console.log(\"Woof!\"),\n};\n\n\nmakeSound(cat); // Output: Meow!\nmakeSound(dog); // Output: Woof!"
+        },
+        {
+          "id": "10",
+          "type": "TEXT",
+          "paragraphs": [
+            "In the above example, the makeSound function uses the in operator to check if the meow property exists in the animal object. Based on the result, it can safely call the respective method (meow or bark) without causing a runtime error.",
+            "",
+            "These TypeScript life hacks can help improve code readability, maintainability, and reduce potential errors."
+          ]
+        }
+      ],
+      "user": {
+        "id": "2",
+        "username": "user",
+        "password": "123",
+        "roles": [
+          "USER"
+        ],
+        "avatar": "https://inara.cz/data/users/23/23724x1594.jpg"
+      }
+    },
+    {
+      "id": "5",
+      "title": "Political party",
+      "subtitle": "What is a political party",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLCojzUJYwcb-2NDlRNS9WHrNvnSh0FUwUVA&usqp=CAU",
+      "views": 567,
+      "createdAt": "17.03.2021",
+      "userId": "1",
+      "type": [
+        "POLITICS"
+      ],
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "title": "Definition",
+          "paragraphs": [
+            "A political party is an organized group of individuals who share similar political ideologies, beliefs, and goals. Political parties aim to gain and exercise political power through elections and other means of political participation. They serve as a platform for individuals to collectively promote their ideas, values, and policies, and to compete for public office."
+          ]
+        },
+        {
+          "id": "2",
+          "type": "TEXT",
+          "title": "Its role",
+          "paragraphs": [
+            "Political parties play a crucial role in representative democracies by offering different choices to voters and facilitating the functioning of government. They formulate and present policy proposals, nominate candidates for elections, and work to gain public support for their agendas. Parties also serve as a means of organizing and mobilizing citizens, fostering political debate, and shaping public opinion."
+          ]
+        },
+        {
+          "id": "3",
+          "type": "TEXT",
+          "paragraphs": [
+            "Political parties typically have internal structures, including leadership positions, committees, and party platforms that outline their guiding principles and policy positions. Parties often develop their own grassroots organizations, fundraising mechanisms, and campaign strategies to support their candidates and promote their agendas."
+          ]
+        },
+        {
+          "id": "4",
+          "type": "IMAGE",
+          "src": "https://st.adda247.com/https://s3-ap-south-1.amazonaws.com/adda247jobs-wp-assets-adda247/articles/wp-content/uploads/2022/11/29195842/Political-Parties-Symbols.jpg",
+          "title": "Political parties symbols in India"
+        },
+        {
+          "id": "5",
+          "type": "TEXT",
+          "paragraphs": [
+            "While political parties aim to secure power and influence in government, they also play a broader role in shaping the political landscape and representing the interests of their members and supporters. Parties can span a wide range of ideologies, from conservative to liberal, socialist to capitalist, and everything in between. The specific goals and policies of a political party can vary significantly based on the country, political system, and prevailing social and economic conditions."
+          ]
+        },
+        {
+          "id": "6",
+          "type": "TEXT",
+          "title": "Summary",
+          "paragraphs": [
+            "Political parties are organized groups of individuals who share political beliefs and work collectively to gain political power, shape public opinion, and influence government policies. They are an integral part of democratic systems, providing a means for citizens to participate in politics and choose among competing ideas and candidates."
+          ]
+        }
+      ],
+      "user": {
+        "id": "1",
+        "username": "admin",
+        "password": "123",
+        "roles": [
+          "ADMIN"
+        ],
+        "avatar": "https://imgv3.fotor.com/images/blog-cover-image/10-profile-picture-ideas-to-make-you-stand-out.jpg"
+      }
+    },
+    {
+      "id": "4",
+      "title": "Generics in Rust",
+      "subtitle": "Exploring Generics in Rust: Reusability and Type Safety",
+      "img": "https://blog.logrocket.com/wp-content/uploads/2022/08/Understanding-Rust-generics-how-use.png",
+      "views": 243,
+      "createdAt": "22.08.2022",
+      "userId": "2",
+      "type": [
+        "IT"
+      ],
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "paragraphs": [
+            "Generics in Rust offer the ability to write reusable code that maintains type safety. In this article, we'll delve into the benefits of generics in Rust and provide a concise code example to illustrate their usage."
+          ]
+        },
+        {
+          "id": "2",
+          "type": "TEXT",
+          "title": "Understanding Generics in Rust:",
+          "paragraphs": [
+            "Generics in Rust allow for the creation of flexible and reusable components that can operate on different types while ensuring strong compile-time type safety."
+          ]
+        },
+        {
+          "id": "3",
+          "type": "TEXT",
+          "title": "Code Example: Implementing a Generic Stack in Rust",
+          "paragraphs": [
+            "Here's a simplified code example showcasing the implementation of a generic stack in Rust:"
+          ]
+        },
+        {
+          "id": "4",
+          "type": "CODE",
+          "code": "struct Stack<T> {\n    elements: Vec<T>,\n}\n\nimpl<T> Stack<T> {\n    fn new() -> Self {\n        Stack { elements: Vec::new() }\n    }\n\n    fn push(&mut self, item: T) {\n        self.elements.push(item);\n    }\n\n    fn pop(&mut self) -> Option<T> {\n        self.elements.pop()\n    }\n\n    fn is_empty(&self) -> bool {\n        self.elements.is_empty()\n    }\n}\n\nfn main() {\n    let mut stack = Stack::<i32>::new();\n    stack.push(42);\n    stack.push(15);\n\n    while let Some(item) = stack.pop() {\n        println!(\"Popped item: {}\", item);\n    }\n}"
+        },
+        {
+          "id": "5",
+          "type": "TEXT",
+          "title": "Benefits of Generics in Rust:",
+          "paragraphs": [
+            "   1. Reusability: Generics enable the creation of reusable code that can work with different data types, reducing code duplication.",
+            "   2. Type Safety: Rust's strong type system ensures that operations on generic types are safe, preventing runtime errors and improving code reliability.",
+            "   3. Performance: Generics are resolved at compile time in Rust, allowing for optimized code generation tailored to specific types.",
+            "   4. Enhanced Abstractions: Generics empower the creation of abstract data structures and algorithms that can adapt to various data types, promoting code modularity."
+          ]
+        },
+        {
+          "id": "6",
+          "type": "TEXT",
+          "paragraphs": [
+            "Generics in Rust provide a powerful means of writing reusable code while maintaining type safety. By leveraging generics, developers can enhance code reusability, improve performance, and create flexible abstractions."
+          ]
+        }
+      ],
+      "user": {
+        "id": "2",
+        "username": "user",
+        "password": "123",
+        "roles": [
+          "USER"
+        ],
+        "avatar": "https://inara.cz/data/users/23/23724x1594.jpg"
+      }
+    }
+  ]

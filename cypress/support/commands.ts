@@ -11,4 +11,22 @@ Cypress.Commands.addAll(articleCommands);
 Cypress.Commands.addAll(commentCommands);
 Cypress.Commands.addAll(ratingCommands);
 
+// EXAMPLE OF OVERWRITE
+// Cypress.Commands.overwrite('intercept', () => {
+//     const FIXTURE_MODE = process.env.FIXTURE_MODE;
+//     const fixtureName = req.METHOD + req.url + hash(req.body);
+
+//     if (FIXTURE_MODE === 'READ') {
+//         readFixture()
+//     }
+
+//     if (FIXTURE_MODE === 'WRITE') {
+//         createFixture(fixtureName, req.body);
+//     }
+
+//     if(FIXTURE_MODE === "API") {
+
+//     }
+// });
+
 export {};
