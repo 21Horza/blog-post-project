@@ -911,6 +911,19 @@
           ]
         }
       ]
+    },
+    {
+      "title": "TEST ARTICLE",
+      "subtitle": "Cool features in HTML5",
+      "img": "https://play-lh.googleusercontent.com/RslBy1o2NEBYUdRjQtUqLbN-ZM2hpks1mHPMiHMrpAuLqxeBPcFSAjo65nQHbTA53YYn",
+      "views": 100,
+      "createdAt": "01.01.2001",
+      "userId": "1",
+      "type": [
+        "IT"
+      ],
+      "blocks": [],
+      "id": "frOi4io"
     }
   ],
   "comments": [
@@ -919,6 +932,12 @@
       "text": "This is a very helpful one! I will definitely implement it. Thanks to the author ~ ",
       "articleId": "1",
       "userId": "2"
+    },
+    {
+      "articleId": "frOi4io",
+      "userId": "4",
+      "text": "text",
+      "id": "Y3WoKWH"
     }
   ],
   "users": [
@@ -986,7 +1005,7 @@
       "id": "4",
       "first": "Test",
       "lastname": "User",
-      "age":100,
+      "age": 100,
       "currency": "USD",
       "country": "USA",
       "city": "Colorado",
