@@ -1,6 +1,6 @@
 import {
-    ArticleDetailsCommentsSchema,
-    ArticleDetailsRecommendationsSchema,
+  ArticleDetailsCommentsSchema,
+  ArticleDetailsRecommendationsSchema,
 } from '../../../ArticleDetailsPage';
 
 export interface ArticleDetailsPageSchema {

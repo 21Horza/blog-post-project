@@ -4,46 +4,46 @@ import { buildCssLoader } from '../build/loaders/buildCssLoader';
 import { BuildPaths } from '../build/types/config';
 
 export default ({ config }: { config: webpack.Configuration }) => {
-    const paths: BuildPaths = {
-        build: '',
-        html: '',
-        entry: '',
-        src: path.resolve(__dirname, '..', '..', 'src'),
-        locales: '',
-        buildLocales: '',
-    };
+  const paths: BuildPaths = {
+    build: '',
+    html: '',
+    entry: '',
+    src: path.resolve(__dirname, '..', '..', 'src'),
+    locales: '',
+    buildLocales: '',
+  };
     config!.resolve!.modules!.push(paths.src);
     config!.resolve!.extensions!.push('.ts', '.tsx');
     config!.resolve!.alias = {
-        ...config!.resolve!.alias,
-        '@': paths.src,
+      ...config!.resolve!.alias,
+      '@': paths.src,
     };
 
     if (config.module?.rules) {
-        config.module.rules = config.module?.rules?.map(
-            (rule: RuleSetRule | '...') => {
-                if (rule !== '...' && /svg/.test(rule.test as string)) {
-                    return { ...rule, exclude: /\.svg$/i };
-                }
+      config.module.rules = config.module?.rules?.map(
+        (rule: RuleSetRule | '...') => {
+          if (rule !== '...' && /svg/.test(rule.test as string)) {
+            return { ...rule, exclude: /\.svg$/i };
+          }
 
-                return rule;
-            },
-        );
+          return rule;
+        },
+      );
     }
 
     config.module?.rules?.push({
-        test: /\.svg$/,
-        use: ['@svgr/webpack'],
+      test: /\.svg$/,
+      use: ['@svgr/webpack'],
     });
     // true, cz storybook is only in dev mode
     config.module?.rules?.push(buildCssLoader(true));
 
     config.plugins?.push(
-        new DefinePlugin({
-            __IS_DEV__: JSON.stringify(true),
-            __API__: JSON.stringify('http://testapi.com'),
-            __PROJECT__: JSON.stringify('storybook'),
-        }),
+      new DefinePlugin({
+        __IS_DEV__: JSON.stringify(true),
+        __API__: JSON.stringify('http://testapi.com'),
+        __PROJECT__: JSON.stringify('storybook'),
+      }),
     );
 
     return config;

@@ -3,20 +3,20 @@ import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { ScrollSafeSchema } from '../types/ScrollSchema';
 
 const initialState: ScrollSafeSchema = {
-    scroll: {},
+  scroll: {},
 };
 
 export const scrollSafeSlice = createSlice({
-    name: 'login',
-    initialState,
-    reducers: {
-        setScrollPosition: (
-            state,
-            { payload }: PayloadAction<{ path: string; position: number }>,
-        ) => {
-            state.scroll[payload.path] = payload.position;
-        },
+  name: 'login',
+  initialState,
+  reducers: {
+    setScrollPosition: (
+      state,
+      { payload }: PayloadAction<{ path: string; position: number }>,
+    ) => {
+      state.scroll[payload.path] = payload.position;
     },
+  },
 });
 
 // Action creators are generated for each case reducer function

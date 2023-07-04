@@ -11,36 +11,36 @@ export const initArticlesPage = createAsyncThunk<
     URLSearchParams,
     ThunkConfig<string>
 >('articlesPage/initArticlesPage', async (searchParams, thunkApi) => {
-    const { dispatch, getState } = thunkApi;
-    const inited = getArticlesPageInited(getState());
+  const { dispatch, getState } = thunkApi;
+  const inited = getArticlesPageInited(getState());
 
-    if (!inited) {
-        const sortFromUrl = searchParams.get('sort');
-        const orderFromUrl = searchParams.get('order');
-        const searchFromUrl = searchParams.get('search');
+  if (!inited) {
+    const sortFromUrl = searchParams.get('sort');
+    const orderFromUrl = searchParams.get('order');
+    const searchFromUrl = searchParams.get('search');
 
-        if (orderFromUrl) {
-            searchParams.forEach((value, key) => {
-                // eslint-disable-next-line default-case
-                switch (key) {
-                    case 'order':
-                        dispatch(
-                            articlesPageActions.setOrder(value as SortOrder),
-                        );
-                        break;
-                    case 'sort':
-                        dispatch(
-                            articlesPageActions.setSort(
+    if (orderFromUrl) {
+      searchParams.forEach((value, key) => {
+        // eslint-disable-next-line default-case
+        switch (key) {
+          case 'order':
+            dispatch(
+              articlesPageActions.setOrder(value as SortOrder),
+            );
+            break;
+          case 'sort':
+            dispatch(
+              articlesPageActions.setSort(
                                 value as ArticleSortField,
-                            ),
-                        );
-                        break;
-                    case 'search':
-                        dispatch(articlesPageActions.setSearch(value));
-                        break;
-                }
-            });
+              ),
+            );
+            break;
+          case 'search':
+            dispatch(articlesPageActions.setSearch(value));
+            break;
         }
-        dispatch(fetchArticlesList({}));
+      });
     }
+    dispatch(fetchArticlesList({}));
+  }
 });

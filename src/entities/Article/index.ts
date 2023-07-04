@@ -3,10 +3,10 @@ export { ArticleDetails } from './ui/ArticleDetails/ArticleDetails';
 export type { Article } from './model/types/article';
 
 export {
-    ArticleType,
-    ArticleView,
-    ArticleBlockType,
-    ArticleSortField,
+  ArticleType,
+  ArticleView,
+  ArticleBlockType,
+  ArticleSortField,
 } from './model/consts/consts';
 
 export type { ArticleDetailsSchema } from './model/types/articleDetailsSchema';

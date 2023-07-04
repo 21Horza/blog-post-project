@@ -3,27 +3,27 @@ import { USER_LOCALSTORAGE_KEY } from '../../../src/shared/const/localstorage';
 import { User } from '../../../src/entities/User';
 
 export const login = (
-    username: string = 'testuser',
-    password: string = '123',
+  username: string = 'testuser',
+  password: string = '123',
 ) => {
-    cy.request({
-        method: 'POST',
-        url: 'http://localhost:8000/login',
-        body: {
-            username,
-            password,
-        },
-    }).then(({ body }) => {
-        window.localStorage.setItem(
-            USER_LOCALSTORAGE_KEY,
-            JSON.stringify(body),
-        );
-        return body;
-    });
+  cy.request({
+    method: 'POST',
+    url: 'http://localhost:8000/login',
+    body: {
+      username,
+      password,
+    },
+  }).then(({ body }) => {
+    window.localStorage.setItem(
+      USER_LOCALSTORAGE_KEY,
+      JSON.stringify(body),
+    );
+    return body;
+  });
 };
 
 export const getByTestId = (testId: string) => {
-    return cy.get(selectByTestId(`${testId}`));
+  return cy.get(selectByTestId(`${testId}`));
 };
 
 declare global {

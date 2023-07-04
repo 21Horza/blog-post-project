@@ -1,10 +1,10 @@
 export const setRate = (
-    starsCount: number = 5,
-    feedback: string = 'feedback',
+  starsCount: number = 5,
+  feedback: string = 'feedback',
 ) => {
-    cy.getByTestId(`StarRating.${starsCount}`).click();
-    cy.getByTestId('RatingCard.Input').type(feedback);
-    cy.getByTestId('RatingCard.Send').click();
+  cy.getByTestId(`StarRating.${starsCount}`).click();
+  cy.getByTestId('RatingCard.Input').type(feedback);
+  cy.getByTestId('RatingCard.Send').click();
 };
 
 declare global {
