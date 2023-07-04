@@ -1,3 +1,1 @@
-export {
-    articleDetailsPageReducer,
-} from './model/slices';
+export { articleDetailsPageReducer } from './model/slices';

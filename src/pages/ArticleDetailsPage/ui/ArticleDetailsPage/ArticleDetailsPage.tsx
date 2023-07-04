@@ -17,30 +17,30 @@ interface ArticleDetailsPageProps {
 }
 
 const reducers: ReducerList = {
-    articleDetailsPage: articleDetailsPageReducer,
+  articleDetailsPage: articleDetailsPageReducer,
 };
 
 const ArticleDetailsPage = (props: ArticleDetailsPageProps) => {
-    const { className } = props;
-    const { id } = useParams<{ id: string }>();
+  const { className } = props;
+  const { id } = useParams<{ id: string }>();
 
-    if (!id) {
-        return null;
-    }
+  if (!id) {
+    return null;
+  }
 
-    return (
-        <DynamicModuleLoader reducers={reducers} removeAfterUnmount>
-            <Page className={classNames(cls.ArticleDetailsPage, {}, [className])}>
-                <VStack gap="16" max>
-                    <ArticleDetailsPageHeader />
-                    <ArticleDetails id={id} />
-                    <ArticleRating articleId={id} />
-                    <ArticleRecommendationsList />
-                    <ArticleDetailsComments id={id} />
-                </VStack>
-            </Page>
-        </DynamicModuleLoader>
-    );
+  return (
+    <DynamicModuleLoader reducers={reducers} removeAfterUnmount>
+      <Page className={classNames(cls.ArticleDetailsPage, {}, [className])}>
+        <VStack gap="16" max>
+          <ArticleDetailsPageHeader />
+          <ArticleDetails id={id} />
+          <ArticleRating articleId={id} />
+          <ArticleRecommendationsList />
+          <ArticleDetailsComments id={id} />
+        </VStack>
+      </Page>
+    </DynamicModuleLoader>
+  );
 };
 
 export default memo(ArticleDetailsPage);

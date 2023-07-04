@@ -7,11 +7,11 @@ import { Currency } from '@/entities/Currency';
 import ProfilePage from './ProfilePage';
 
 export default {
-    title: 'pages/ProfilePage',
-    component: ProfilePage,
-    argTypes: {
-        backgroundColor: { control: 'color' },
-    },
+  title: 'pages/ProfilePage',
+  component: ProfilePage,
+  argTypes: {
+    backgroundColor: { control: 'color' },
+  },
 } as ComponentMeta<typeof ProfilePage>;
 
 // eslint-disable-next-line react/jsx-props-no-spreading
@@ -20,31 +20,31 @@ const Template: ComponentStory<typeof ProfilePage> = (args: object) => <ProfileP
 export const Normal = Template.bind({});
 Normal.args = {};
 Normal.decorators = [ThemeDecorator(Theme.LIGHT), StoreDecorator({
-    profile: {
-        form: {
-            username: 'admin',
-            age: 25,
-            country: Country.China,
-            first: 'Horza',
-            lastname: 'Go',
-            city: 'Shanghai',
-            currency: Currency.RMB,
-        },
+  profile: {
+    form: {
+      username: 'admin',
+      age: 25,
+      country: Country.China,
+      first: 'Horza',
+      lastname: 'Go',
+      city: 'Shanghai',
+      currency: Currency.RMB,
     },
+  },
 })];
 
 export const Dark = Template.bind({});
 Dark.args = {};
 Dark.decorators = [ThemeDecorator(Theme.DARK), StoreDecorator({
-    profile: {
-        form: {
-            username: 'admin',
-            age: 25,
-            country: Country.China,
-            first: 'Horza',
-            lastname: 'Go',
-            city: 'Shanghai',
-            currency: Currency.RMB,
-        },
+  profile: {
+    form: {
+      username: 'admin',
+      age: 25,
+      country: Country.China,
+      first: 'Horza',
+      lastname: 'Go',
+      city: 'Shanghai',
+      currency: Currency.RMB,
     },
+  },
 })];

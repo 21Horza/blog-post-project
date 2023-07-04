@@ -15,57 +15,57 @@ interface ArticleSortSelectorProps {
 }
 
 export const ArticleSortSelector = memo((props: ArticleSortSelectorProps) => {
-    const {
-        className,
-        onChangeSort,
-        onChangeOrder,
-        sort,
-        order,
-    } = props;
+  const {
+    className,
+    onChangeSort,
+    onChangeOrder,
+    sort,
+    order,
+  } = props;
 
-    const { t } = useTranslation('article-details');
+  const { t } = useTranslation('article-details');
 
-    const orderOptions = useMemo<SelectOption<SortOrder>[]>(() => [
-        {
-            value: 'asc',
-            content: t('ascending order'),
-        },
-        {
-            value: 'desc',
-            content: t('descending order'),
-        },
-    ], [t]);
+  const orderOptions = useMemo<SelectOption<SortOrder>[]>(() => [
+    {
+      value: 'asc',
+      content: t('ascending order'),
+    },
+    {
+      value: 'desc',
+      content: t('descending order'),
+    },
+  ], [t]);
 
-    const sortFieldOptions = useMemo<SelectOption<ArticleSortField>[]>(() => [
-        {
-            value: ArticleSortField.CREATED_AT,
-            content: t('issue date'),
-        },
-        {
-            value: ArticleSortField.TITLE,
-            content: t('title'),
-        },
-        {
-            value: ArticleSortField.VIEWS,
-            content: t('views'),
-        },
-    ], [t]);
+  const sortFieldOptions = useMemo<SelectOption<ArticleSortField>[]>(() => [
+    {
+      value: ArticleSortField.CREATED_AT,
+      content: t('issue date'),
+    },
+    {
+      value: ArticleSortField.TITLE,
+      content: t('title'),
+    },
+    {
+      value: ArticleSortField.VIEWS,
+      content: t('views'),
+    },
+  ], [t]);
 
-    return (
-        <div className={classNames(cls.ArticleSortSelector, {}, [className])}>
-            <Select
-                value={sort}
-                onChange={onChangeSort}
-                options={sortFieldOptions}
-                label={t('Sort by')}
-            />
-            <Select
-                className={cls.order}
-                value={order}
-                onChange={onChangeOrder}
-                options={orderOptions}
-                label={t('Order by')}
-            />
-        </div>
-    );
+  return (
+    <div className={classNames(cls.ArticleSortSelector, {}, [className])}>
+      <Select
+        value={sort}
+        onChange={onChangeSort}
+        options={sortFieldOptions}
+        label={t('Sort by')}
+      />
+      <Select
+        className={cls.order}
+        value={order}
+        onChange={onChangeOrder}
+        options={orderOptions}
+        label={t('Order by')}
+      />
+    </div>
+  );
 });

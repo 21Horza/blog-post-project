@@ -14,7 +14,7 @@ describe('User goes to the profile page', () => {
         cy.resetProfile(profileId);
     });
     it('and profile successfully loaded', () => {
-        cy.getByTestId(('ProfileCard.Name')).should('have.value', 'Test');
+        cy.getByTestId('ProfileCard.Name').should('have.value', 'Test');
     });
     it('and the user edits the profile', () => {
         const newName = 'newName';

@@ -17,64 +17,64 @@ interface EditableProfileCardHeaderProps {
 }
 
 export const EditableProfileCardHeader = memo((props: EditableProfileCardHeaderProps) => {
-    const {
-        className,
-    } = props;
+  const {
+    className,
+  } = props;
 
-    const { t } = useTranslation('profile');
-    const authData = useSelector(getUserAuthData);
-    const profileData = useSelector(getProfileData);
-    const canEdit = authData?.id === profileData?.id;
+  const { t } = useTranslation('profile');
+  const authData = useSelector(getUserAuthData);
+  const profileData = useSelector(getProfileData);
+  const canEdit = authData?.id === profileData?.id;
 
-    const readonly = useSelector(getProfileReadOnly);
-    const dispatch = useAppDispatch();
+  const readonly = useSelector(getProfileReadOnly);
+  const dispatch = useAppDispatch();
 
-    const onEdit = useCallback(() => {
-        dispatch(profileActions.setReadOnly(false));
-    }, [dispatch]);
+  const onEdit = useCallback(() => {
+    dispatch(profileActions.setReadOnly(false));
+  }, [dispatch]);
 
-    const onCancelEdit = useCallback(() => {
-        dispatch(profileActions.cancelEdit());
-    }, [dispatch]);
+  const onCancelEdit = useCallback(() => {
+    dispatch(profileActions.cancelEdit());
+  }, [dispatch]);
 
-    const onSave = useCallback(() => {
-        dispatch(updateProfileData());
-    }, [dispatch]);
+  const onSave = useCallback(() => {
+    dispatch(updateProfileData());
+  }, [dispatch]);
 
-    return (
-        <HStack max justify="between" className={classNames('', {}, [className])}>
-            <Text title={t('Profile')} />
-            {canEdit && (
-                <div>
-                    {readonly ? (
-                        <Button
-                            data-testid="EditableProfileCardHeader.EditButton"
-                            theme={ButtonTheme.OUTLINE}
-                            onClick={onEdit}
-                        >
-                            {t('Edit')}
-                        </Button>
-                    )
-                        : (
-                            <HStack gap="8">
-                                <Button
-                                    data-testid="EditableProfileCardHeader.CancelButton"
-                                    theme={ButtonTheme.OUTLINE_RED}
-                                    onClick={onCancelEdit}
-                                >
-                                    {t('Cancel')}
-                                </Button>
-                                <Button
-                                    data-testid="EditableProfileCardHeader.SaveButton"
-                                    theme={ButtonTheme.OUTLINE}
-                                    onClick={onSave}
-                                >
-                                    {t('Save')}
-                                </Button>
-                            </HStack>
-                        )}
-                </div>
+  return (
+    <HStack max justify="between" className={classNames('', {}, [className])}>
+      <Text title={t('Profile')} />
+      {canEdit && (
+        <div>
+          {readonly ? (
+            <Button
+              data-testid="EditableProfileCardHeader.EditButton"
+              theme={ButtonTheme.OUTLINE}
+              onClick={onEdit}
+            >
+              {t('Edit')}
+            </Button>
+          )
+            : (
+              <HStack gap="8">
+                <Button
+                  data-testid="EditableProfileCardHeader.CancelButton"
+                  theme={ButtonTheme.OUTLINE_RED}
+                  onClick={onCancelEdit}
+                >
+                  {t('Cancel')}
+                </Button>
+                <Button
+                  data-testid="EditableProfileCardHeader.SaveButton"
+                  theme={ButtonTheme.OUTLINE}
+                  onClick={onSave}
+                >
+                  {t('Save')}
+                </Button>
+              </HStack>
             )}
-        </HStack>
-    );
+        </div>
+      )}
+    </HStack>
+  );
 });

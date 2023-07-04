@@ -8,24 +8,24 @@ import { getUserMounted, userActions } from '@/entities/User';
 import { AppRouter } from './providers/router';
 
 function App() {
-    const dispatch = useDispatch();
-    const mounted = useSelector(getUserMounted);
+  const dispatch = useDispatch();
+  const mounted = useSelector(getUserMounted);
 
-    useEffect(() => {
-        dispatch(userActions.initAuthData());
-    }, [dispatch]);
+  useEffect(() => {
+    dispatch(userActions.initAuthData());
+  }, [dispatch]);
 
-    return (
-        <div className={classNames('app', {}, [])}>
-            <Suspense fallback="">
-                <Navbar />
-                <div className="content-page">
-                    <Sidebar />
-                    {mounted && <AppRouter />}
-                </div>
-            </Suspense>
+  return (
+    <div className={classNames('app', {}, [])}>
+      <Suspense fallback="">
+        <Navbar />
+        <div className="content-page">
+          <Sidebar />
+          {mounted && <AppRouter />}
         </div>
-    );
+      </Suspense>
+    </div>
+  );
 }
 
 export default App;

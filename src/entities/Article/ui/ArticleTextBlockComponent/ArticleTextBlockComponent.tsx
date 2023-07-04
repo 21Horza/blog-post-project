@@ -10,19 +10,19 @@ interface ArticleTextBlockComponentProps {
 }
 
 export const ArticleTextBlockComponent = memo((props: ArticleTextBlockComponentProps) => {
-    const {
-        className,
-        block,
-    } = props;
+  const {
+    className,
+    block,
+  } = props;
 
-    return (
-        <div className={classNames(cls.ArticleTextBlockComponent, {}, [className])}>
-            {block.title && (
-                <Text title={block.title} className={cls.title} />
-            )}
-            {block.paragraphs.map((p) => (
-                <Text key={p} text={p} className={cls.paragrapgh} />
-            ))}
-        </div>
-    );
+  return (
+    <div className={classNames(cls.ArticleTextBlockComponent, {}, [className])}>
+      {block.title && (
+        <Text title={block.title} className={cls.title} />
+      )}
+      {block.paragraphs.map((p) => (
+        <Text key={p} text={p} className={cls.paragrapgh} />
+      ))}
+    </div>
+  );
 });

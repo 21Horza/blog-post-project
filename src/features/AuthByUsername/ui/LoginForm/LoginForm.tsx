@@ -21,66 +21,66 @@ export interface LoginFormProps {
 }
 
 const initialReducers: ReducerList = {
-    loginForm: loginReducer,
+  loginForm: loginReducer,
 };
 
 const LoginForm = memo(({ className, onSuccess }: LoginFormProps) => {
-    const { t } = useTranslation();
-    const dispatch = useAppDispatch();
-    const username = useSelector(getLoginUsername);
-    const password = useSelector(getLoginPassword);
-    const isLoading = useSelector(getLoginIsLoading);
-    const error = useSelector(getLoginError);
+  const { t } = useTranslation();
+  const dispatch = useAppDispatch();
+  const username = useSelector(getLoginUsername);
+  const password = useSelector(getLoginPassword);
+  const isLoading = useSelector(getLoginIsLoading);
+  const error = useSelector(getLoginError);
 
-    const onChangeUsername = useCallback((value: string) => {
-        dispatch(loginActions.setUsername(value));
-    }, [dispatch]);
+  const onChangeUsername = useCallback((value: string) => {
+    dispatch(loginActions.setUsername(value));
+  }, [dispatch]);
 
-    const onChangePassword = useCallback((value: string) => {
-        dispatch(loginActions.setPassword(value));
-    }, [dispatch]);
+  const onChangePassword = useCallback((value: string) => {
+    dispatch(loginActions.setPassword(value));
+  }, [dispatch]);
 
-    const onLoginClick = useCallback(async () => {
-        const result = await dispatch(loginByUsername({ username, password }));
-        if (result.meta.requestStatus === 'fulfilled') {
-            onSuccess();
-        }
-    }, [onSuccess, password, username, dispatch]);
+  const onLoginClick = useCallback(async () => {
+    const result = await dispatch(loginByUsername({ username, password }));
+    if (result.meta.requestStatus === 'fulfilled') {
+      onSuccess();
+    }
+  }, [onSuccess, password, username, dispatch]);
 
-    return (
-        <DynamicModuleLoader
-            removeAfterUnmount
-            reducers={initialReducers}
+  return (
+    <DynamicModuleLoader
+      removeAfterUnmount
+      reducers={initialReducers}
+    >
+      <div className={classNames(cls.LoginForm, {}, [className])}>
+        <Text title={t('Auth form')} />
+        {error && <Text text={t('You entered wrong login or password')} theme={TextTheme.ERROR} />}
+        <Input
+          autofocus
+          type="text"
+          className={cls.input}
+          placeholder={t('Enter username')}
+          onChange={onChangeUsername}
+          value={username}
+        />
+        <Input
+          type="text"
+          className={cls.input}
+          placeholder={t('Enter password')}
+          onChange={onChangePassword}
+          value={password}
+        />
+        <Button
+          theme={ButtonTheme.OUTLINE}
+          className={cls.loginBtn}
+          onClick={onLoginClick}
+          disabled={isLoading}
         >
-            <div className={classNames(cls.LoginForm, {}, [className])}>
-                <Text title={t('Auth form')} />
-                {error && <Text text={t('You entered wrong login or password')} theme={TextTheme.ERROR} />}
-                <Input
-                    autofocus
-                    type="text"
-                    className={cls.input}
-                    placeholder={t('Enter username')}
-                    onChange={onChangeUsername}
-                    value={username}
-                />
-                <Input
-                    type="text"
-                    className={cls.input}
-                    placeholder={t('Enter password')}
-                    onChange={onChangePassword}
-                    value={password}
-                />
-                <Button
-                    theme={ButtonTheme.OUTLINE}
-                    className={cls.loginBtn}
-                    onClick={onLoginClick}
-                    disabled={isLoading}
-                >
-                    { t('Log in')}
-                </Button>
-            </div>
-        </DynamicModuleLoader>
-    );
+          { t('Log in')}
+        </Button>
+      </div>
+    </DynamicModuleLoader>
+  );
 });
 
 export default LoginForm;

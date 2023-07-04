@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { useSelector } from 'react-redux';
 import { LoginModal } from '@/features/AuthByUsername';
 import {
-    getUserAuthData,
+  getUserAuthData,
 } from '@/entities/User';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import { Button, ButtonTheme } from '@/shared/ui/Button';
@@ -20,56 +20,56 @@ interface NavbarProps {
 }
 
 export const Navbar = memo(({ className }: NavbarProps) => {
-    const { t } = useTranslation();
-    const [isAuthModal, setIsAuthModal] = useState(false);
-    const authData = useSelector(getUserAuthData);
+  const { t } = useTranslation();
+  const [isAuthModal, setIsAuthModal] = useState(false);
+  const authData = useSelector(getUserAuthData);
 
-    const onCloseModal = useCallback(() => {
-        setIsAuthModal(false);
-    }, []);
+  const onCloseModal = useCallback(() => {
+    setIsAuthModal(false);
+  }, []);
 
-    const onShowModal = useCallback(() => {
-        setIsAuthModal(true);
-    }, []);
+  const onShowModal = useCallback(() => {
+    setIsAuthModal(true);
+  }, []);
 
-    if (authData) {
-        return (
-            <header className={classNames(cls.Navbar, {}, [className])}>
-                <Text
-                    className={cls.appName}
-                    title={t('Online magazine')}
-                    theme={TextTheme.INVERTED}
-                />
-                <AppLink
-                    to={getRouteArticleCreate()}
-                    theme={AppLinkTheme.SECONDARY}
-                    className={cls.createBtn}
-                >
-                    {t('Create an article')}
-                </AppLink>
-                <HStack gap="16" className={cls.actions}>
-                    <NotificationButton />
-                    <AvatarDropdown />
-                </HStack>
-            </header>
-        );
-    }
-
+  if (authData) {
     return (
-        <header className={classNames(cls.Navbar, {}, [className])}>
-            <Button
-                theme={ButtonTheme.CLEAR_INVERTED}
-                className={cls.links}
-                onClick={onShowModal}
-            >
-                {t('Log in')}
-            </Button>
-            {isAuthModal && (
-                <LoginModal
-                    isOpen={isAuthModal}
-                    onClose={onCloseModal}
-                />
-            )}
-        </header>
+      <header className={classNames(cls.Navbar, {}, [className])}>
+        <Text
+          className={cls.appName}
+          title={t('Online magazine')}
+          theme={TextTheme.INVERTED}
+        />
+        <AppLink
+          to={getRouteArticleCreate()}
+          theme={AppLinkTheme.SECONDARY}
+          className={cls.createBtn}
+        >
+          {t('Create an article')}
+        </AppLink>
+        <HStack gap="16" className={cls.actions}>
+          <NotificationButton />
+          <AvatarDropdown />
+        </HStack>
+      </header>
     );
+  }
+
+  return (
+    <header className={classNames(cls.Navbar, {}, [className])}>
+      <Button
+        theme={ButtonTheme.CLEAR_INVERTED}
+        className={cls.links}
+        onClick={onShowModal}
+      >
+        {t('Log in')}
+      </Button>
+      {isAuthModal && (
+        <LoginModal
+          isOpen={isAuthModal}
+          onClose={onCloseModal}
+        />
+      )}
+    </header>
+  );
 });

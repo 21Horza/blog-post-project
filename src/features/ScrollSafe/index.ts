@@ -1,10 +1,6 @@
-export type {
-    ScrollSafeSchema,
-} from './model/types/ScrollSchema';
+export type { ScrollSafeSchema } from './model/types/ScrollSchema';
 
-export {
-    getScrollSafeByPath,
-} from './model/selectors/scrollSafeSelector';
+export { getScrollSafeByPath } from './model/selectors/scrollSafeSelector';
 
 export {
     scrollSafeReducer,

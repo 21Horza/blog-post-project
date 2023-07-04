@@ -37,7 +37,9 @@ describe('User goes to the Article detail page', () => {
     });
 
     it('and sends a rating (example: stubbed (on fixtures))', () => {
-        cy.intercept('GET', '**/articles/*', { fixture: 'article-details.json' });
+        cy.intercept('GET', '**/articles/*', {
+            fixture: 'article-details.json',
+        });
         cy.getByTestId('ArticleDetails.Info');
         cy.getByTestId('RatingCard').scrollIntoView();
         cy.setRate(5, 'feedback');

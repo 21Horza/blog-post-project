@@ -9,20 +9,20 @@ interface LangSwitcherProps {
 }
 
 export const LangSwitcher = memo(({ className, short }: LangSwitcherProps) => {
-    const { t, i18n } = useTranslation();
+  const { t, i18n } = useTranslation();
 
-    const toggle = () => {
-        i18n.changeLanguage(i18n.language === 'ru' ? 'en' : 'ru');
-    };
+  const toggle = () => {
+    i18n.changeLanguage(i18n.language === 'ru' ? 'en' : 'ru');
+  };
 
-    return (
-        <Button
-            className={classNames('', {}, [className])}
-            theme={ButtonTheme.CLEAR}
-            onClick={toggle}
-        >
-            {/* i18next-extract-disable-line */}
-            {t(short ? t('Short lang') : t('Language'))}
-        </Button>
-    );
+  return (
+    <Button
+      className={classNames('', {}, [className])}
+      theme={ButtonTheme.CLEAR}
+      onClick={toggle}
+    >
+      {/* i18next-extract-disable-line */}
+      {t(short ? t('Short lang') : t('Language'))}
+    </Button>
+  );
 });

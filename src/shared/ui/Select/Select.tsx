@@ -17,48 +17,48 @@ interface SelectProps<T extends string> {
 }
 
 export const Select = <T extends string>(props: SelectProps<T>) => {
-    const {
-        className,
-        label,
-        options,
-        value,
-        readonly,
-        onChange,
-    } = props;
+  const {
+    className,
+    label,
+    options,
+    value,
+    readonly,
+    onChange,
+  } = props;
 
-    const optionList = useMemo(() => options?.map((opt) => (
-        <option
-            className={cls.option}
-            value={opt.value}
-            key={opt.value}
-        >
-            {opt.content}
-        </option>
-    )), [options]);
+  const optionList = useMemo(() => options?.map((opt) => (
+    <option
+      className={cls.option}
+      value={opt.value}
+      key={opt.value}
+    >
+      {opt.content}
+    </option>
+  )), [options]);
 
-    const mods: Mods = {
+  const mods: Mods = {
 
-    };
+  };
 
-    const onChangeHandler = (e: ChangeEvent<HTMLSelectElement>) => {
-        if (onChange) onChange(e.target.value as T);
-    };
+  const onChangeHandler = (e: ChangeEvent<HTMLSelectElement>) => {
+    if (onChange) onChange(e.target.value as T);
+  };
 
-    return (
-        <div className={classNames(cls.Wrapper, mods, [className])}>
-            {label && (
-                <span className={cls.label}>
-                    {`${label}>`}
-                </span>
-            )}
-            <select
-                disabled={readonly}
-                value={value}
-                onChange={onChangeHandler}
-                className={cls.select}
-            >
-                {optionList}
-            </select>
-        </div>
-    );
+  return (
+    <div className={classNames(cls.Wrapper, mods, [className])}>
+      {label && (
+        <span className={cls.label}>
+          {`${label}>`}
+        </span>
+      )}
+      <select
+        disabled={readonly}
+        value={value}
+        onChange={onChangeHandler}
+        className={cls.select}
+      >
+        {optionList}
+      </select>
+    </div>
+  );
 };

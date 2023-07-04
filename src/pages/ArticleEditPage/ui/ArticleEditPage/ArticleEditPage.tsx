@@ -9,21 +9,21 @@ interface ArticleEditPageProps {
 }
 
 const ArticleEditPage = memo((props: ArticleEditPageProps) => {
-    const {
-        className,
-    } = props;
-    const { t } = useTranslation();
-    const { id } = useParams<{id: string}>();
-    const isEdit = Boolean(id);
-    return (
-        <Page className={classNames('', {}, [className])}>
-            {isEdit
-            // i18next-extract-disable-line
-                ? t(`Edit article with id: ${id}`)
-            // i18next-extract-disable-line
-                : t('Create a new article')}
-        </Page>
-    );
+  const {
+    className,
+  } = props;
+  const { t } = useTranslation();
+  const { id } = useParams<{id: string}>();
+  const isEdit = Boolean(id);
+  return (
+    <Page className={classNames('', {}, [className])}>
+      {isEdit
+        // i18next-extract-disable-line
+        ? t(`Edit article with id: ${id}`)
+        // i18next-extract-disable-line
+        : t('Create a new article')}
+    </Page>
+  );
 });
 
 export default ArticleEditPage;

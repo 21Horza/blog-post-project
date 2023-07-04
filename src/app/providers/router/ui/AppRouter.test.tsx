@@ -5,75 +5,75 @@ import { getRouteAbout, getRouteAdmin, getRouteProfile } from '@/shared/const/ro
 import { UserRole } from '@/entities/User';
 
 describe('app/router/AppRouter', () => {
-    test('Page has to be rendered', async () => {
-        componentRender(<AppRouter />, {
-            route: getRouteAbout(),
-        });
-
-        const page = await screen.findByTestId('AboutPage');
-        expect(page).toBeInTheDocument();
+  test('Page has to be rendered', async () => {
+    componentRender(<AppRouter />, {
+      route: getRouteAbout(),
     });
 
-    test('Not found page', async () => {
-        componentRender(<AppRouter />, {
-            route: '/someroute',
-        });
+    const page = await screen.findByTestId('AboutPage');
+    expect(page).toBeInTheDocument();
+  });
 
-        const page = await screen.findByTestId('NotFoundPage');
-        expect(page).toBeInTheDocument();
+  test('Not found page', async () => {
+    componentRender(<AppRouter />, {
+      route: '/someroute',
     });
 
-    test('Redirect unauthorized user to the main page', async () => {
-        componentRender(<AppRouter />, {
-            route: getRouteProfile('1'),
-        });
+    const page = await screen.findByTestId('NotFoundPage');
+    expect(page).toBeInTheDocument();
+  });
 
-        const page = await screen.findByTestId('MainPage');
-        expect(page).toBeInTheDocument();
+  test('Redirect unauthorized user to the main page', async () => {
+    componentRender(<AppRouter />, {
+      route: getRouteProfile('1'),
     });
 
-    test('Auth user gets access to the page', async () => {
-        componentRender(<AppRouter />, {
-            route: getRouteProfile('1'),
-            initialState: {
-                user: {
-                    _mounted: true,
-                    authData: {},
-                },
-            },
-        });
+    const page = await screen.findByTestId('MainPage');
+    expect(page).toBeInTheDocument();
+  });
 
-        const page = await screen.findByTestId('ProfilePage');
-        expect(page).toBeInTheDocument();
+  test('Auth user gets access to the page', async () => {
+    componentRender(<AppRouter />, {
+      route: getRouteProfile('1'),
+      initialState: {
+        user: {
+          _mounted: true,
+          authData: {},
+        },
+      },
     });
 
-    test('Access forbidden (user role is absent)', async () => {
-        componentRender(<AppRouter />, {
-            route: getRouteAdmin(),
-            initialState: {
-                user: {
-                    _mounted: true,
-                    authData: {},
-                },
-            },
-        });
+    const page = await screen.findByTestId('ProfilePage');
+    expect(page).toBeInTheDocument();
+  });
 
-        const page = await screen.findByTestId('ForbiddenPage');
-        expect(page).toBeInTheDocument();
+  test('Access forbidden (user role is absent)', async () => {
+    componentRender(<AppRouter />, {
+      route: getRouteAdmin(),
+      initialState: {
+        user: {
+          _mounted: true,
+          authData: {},
+        },
+      },
     });
 
-    test('Access allowed (user role exists)', async () => {
-        componentRender(<AppRouter />, {
-            route: getRouteAdmin(),
-            initialState: {
-                user: {
-                    _mounted: true,
-                    authData: { roles: [UserRole.ADMIN] },
-                },
-            },
-        });
+    const page = await screen.findByTestId('ForbiddenPage');
+    expect(page).toBeInTheDocument();
+  });
 
-        const page = await screen.findByTestId('AdminPanelPage');
-        expect(page).toBeInTheDocument();
+  test('Access allowed (user role exists)', async () => {
+    componentRender(<AppRouter />, {
+      route: getRouteAdmin(),
+      initialState: {
+        user: {
+          _mounted: true,
+          authData: { roles: [UserRole.ADMIN] },
+        },
+      },
     });
+
+    const page = await screen.findByTestId('AdminPanelPage');
+    expect(page).toBeInTheDocument();
+  });
 });

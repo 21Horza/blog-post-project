@@ -12,40 +12,37 @@ import {
     getRouteProfile,
 } from '@/shared/const/router';
 
-export const getSidebarItems = createSelector(
-    getUserAuthData,
-    (userData) => {
-        const sidebarItemList: SidebarItemType[] = [
+export const getSidebarItems = createSelector(getUserAuthData, (userData) => {
+    const sidebarItemList: SidebarItemType[] = [
+        {
+            path: getRouteMain(),
+            Icon: MainIcon,
+            text: 'Main',
+        },
+        {
+            path: getRouteAbout(),
+            Icon: AboutIcon,
+            text: 'About',
+        },
+    ];
+
+    // for auth users
+    if (userData) {
+        sidebarItemList.push(
             {
-                path: getRouteMain(),
-                Icon: MainIcon,
-                text: 'Main',
+                path: getRouteProfile(userData.id),
+                Icon: ProfileIcon,
+                text: 'Profile',
+                authOnly: true,
             },
             {
-                path: getRouteAbout(),
-                Icon: AboutIcon,
-                text: 'About',
+                path: getRouteArticles(),
+                Icon: ArticleIcon,
+                text: 'Articles',
+                authOnly: true,
             },
-        ];
+        );
+    }
 
-        // for auth users
-        if (userData) {
-            sidebarItemList.push(
-                {
-                    path: getRouteProfile(userData.id),
-                    Icon: ProfileIcon,
-                    text: 'Profile',
-                    authOnly: true,
-                },
-                {
-                    path: getRouteArticles(),
-                    Icon: ArticleIcon,
-                    text: 'Articles',
-                    authOnly: true,
-                },
-            );
-        }
-
-        return sidebarItemList;
-    },
-);
+    return sidebarItemList;
+});

@@ -2,6 +2,4 @@ export interface ArticleEditFormSchema {
     id: string;
 }
 
-export {
-    ErrorPage,
-} from './ui/ErrorPage/ErrorPage';
+export { ErrorPage } from './ui/ErrorPage/ErrorPage';

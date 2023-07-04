@@ -11,18 +11,18 @@ interface CodeProps {
 }
 
 export const Code = memo((props: CodeProps) => {
-    const { className, text } = props;
-    const copy = useCallback(() => {
-        navigator.clipboard.writeText(text);
-    }, [text]);
-    return (
-        <pre className={classNames(cls.Code, {}, [className])}>
-            <Button onClick={copy} className={cls.copyBtn} theme={ButtonTheme.CLEAR}>
-                <Icon Svg={CopyIcon} />
-            </Button>
-            <code>
-                {text}
-            </code>
-        </pre>
-    );
+  const { className, text } = props;
+  const copy = useCallback(() => {
+    navigator.clipboard.writeText(text);
+  }, [text]);
+  return (
+    <pre className={classNames(cls.Code, {}, [className])}>
+      <Button onClick={copy} className={cls.copyBtn} theme={ButtonTheme.CLEAR}>
+        <Icon Svg={CopyIcon} />
+      </Button>
+      <code>
+        {text}
+      </code>
+    </pre>
+  );
 });

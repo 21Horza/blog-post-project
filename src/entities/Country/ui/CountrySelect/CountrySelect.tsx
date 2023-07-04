@@ -11,31 +11,31 @@ interface CountrySelectProps {
 }
 
 const options = [
-    { value: Country.USA, content: Country.USA },
-    { value: Country.Russia, content: Country.Russia },
-    { value: Country.Germany, content: Country.Germany },
-    { value: Country.China, content: Country.China },
+  { value: Country.USA, content: Country.USA },
+  { value: Country.Russia, content: Country.Russia },
+  { value: Country.Germany, content: Country.Germany },
+  { value: Country.China, content: Country.China },
 ];
 
 export const CountrySelect = memo(({
-    className, value, onChange, readonly,
+  className, value, onChange, readonly,
 }: CountrySelectProps) => {
-    const { t } = useTranslation('profile');
+  const { t } = useTranslation('profile');
 
-    const onChangeHandler = useCallback((value: string) => {
-        onChange?.(value as Country);
-    }, [onChange]);
+  const onChangeHandler = useCallback((value: string) => {
+    onChange?.(value as Country);
+  }, [onChange]);
 
-    return (
-        <ListBox
-            direction="top right"
-            readonly={readonly}
-            className={className}
-            value={value}
-            defaultValue={t('Set country')}
-            label={t('Set country')}
-            items={options}
-            onChange={onChangeHandler}
-        />
-    );
+  return (
+    <ListBox
+      direction="top right"
+      readonly={readonly}
+      className={className}
+      value={value}
+      defaultValue={t('Set country')}
+      label={t('Set country')}
+      items={options}
+      onChange={onChangeHandler}
+    />
+  );
 });

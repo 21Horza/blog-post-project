@@ -4,41 +4,41 @@ import { Article } from '@/entities/Article';
 import { ArticleRecommendationsList } from './ArticleRecommendationsList';
 
 export default {
-    title: 'features/ArticleRecommendationsList',
-    component: ArticleRecommendationsList,
-    argTypes: {
-        backgroundColor: { control: 'color' },
-    },
+  title: 'features/ArticleRecommendationsList',
+  component: ArticleRecommendationsList,
+  argTypes: {
+    backgroundColor: { control: 'color' },
+  },
 } as ComponentMeta<typeof ArticleRecommendationsList>;
 
 const Template: ComponentStory<typeof ArticleRecommendationsList> = (args) => <ArticleRecommendationsList {...args} />;
 
 const article: Article = {
-    id: '1',
-    img: 'https://www.housingeurope.eu/image/163/sectionheaderpng/resourcesdef.png',
-    createdAt: '05.06.2022',
-    views: 123,
-    user: { id: '1', username: 'user' },
-    blocks: [],
-    type: [],
-    title: 'title',
-    subtitle: 'subtitle',
+  id: '1',
+  img: 'https://www.housingeurope.eu/image/163/sectionheaderpng/resourcesdef.png',
+  createdAt: '05.06.2022',
+  views: 123,
+  user: { id: '1', username: 'user' },
+  blocks: [],
+  type: [],
+  title: 'title',
+  subtitle: 'subtitle',
 };
 
 export const Normal = Template.bind({});
 Normal.args = {};
 Normal.decorators = [StoreDecorator({})];
 Normal.parameters = {
-    mockData: [
-        {
-            url: `${__API__}/articles?_limit=3`,
-            method: 'GET',
-            status: 200,
-            response: [
-                { ...article, id: '1' },
-                { ...article, id: '2' },
-                { ...article, id: '3' },
-            ],
-        },
-    ],
+  mockData: [
+    {
+      url: `${__API__}/articles?_limit=3`,
+      method: 'GET',
+      status: 200,
+      response: [
+        { ...article, id: '1' },
+        { ...article, id: '2' },
+        { ...article, id: '3' },
+      ],
+    },
+  ],
 };
