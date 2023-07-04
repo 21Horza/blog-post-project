@@ -923,6 +923,10 @@
             "id": "1",
             "username": "admin",
             "password": "123",
+            "features": {
+                "isArticleRatingEnabled": true,
+                "isCounterEnebled": true
+            },
             "roles": ["ADMIN"],
             "avatar": "https://imgv3.fotor.com/images/blog-cover-image/10-profile-picture-ideas-to-make-you-stand-out.jpg"
         },
@@ -930,14 +934,22 @@
             "id": "2",
             "username": "user",
             "password": "123",
+            "features": {
+                "isArticleRatingEnabled": false,
+                "isCounterEnebled": false
+            },
             "roles": ["USER"],
             "avatar": "https://inara.cz/data/users/23/23724x1594.jpg"
         },
         {
-            "id": "2",
+            "id": "3",
             "username": "manager",
             "password": "123",
             "roles": ["MANAGER"],
+            "features": {
+                "isArticleRatingEnabled": true,
+                "isCounterEnebled": false
+            },
             "avatar": "https://images.pexels.com/photos/771742/pexels-photo-771742.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
         },
         {
@@ -945,6 +957,10 @@
             "username": "testuser",
             "password": "123",
             "roles": ["ADMIN"],
+            "features": {
+                "isArticleRatingEnabled": false,
+                "isCounterEnebled": true
+            },
             "avatar": "https://imgv3.fotor.com/images/blog-cover-image/10-profile-picture-ideas-to-make-you-stand-out.jpg"
         }
     ],
