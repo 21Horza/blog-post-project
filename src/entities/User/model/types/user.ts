@@ -1,5 +1,6 @@
 import { FeatureFlags } from '@/shared/types/featureFlags';
 import { UserRole } from '../consts/consts';
+import { JsonSettings } from './jsonSettings';
 
 export interface User {
     id: string;
@@ -7,9 +8,10 @@ export interface User {
     avatar?: string;
     roles?: UserRole[];
     features?: FeatureFlags;
+    jsonSettings?: JsonSettings;
 }
 
 export interface UserSchema {
-    authData?: User; // if undefined, then user is not auth
-    _mounted: boolean;
+    authData?: User;
+    _inited: boolean;
 }
