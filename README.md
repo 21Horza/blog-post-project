@@ -168,6 +168,20 @@ For asynchronous connection of reducers (so as not to pull them into a common bu
 
 ----
 
+### Work with feature-flags
+
+Allow feature flags only with toggleFeatures helper. An object with options is passed to it:
+
+{
+    name: feature flag name,
+    on: a function that will work after enabling the feature
+    of: function that will work after the feature is turned off
+}
+
+To automatically remove a feature, use the remove-feature.ts script.
+The script takes 2 arguments:
+1. The name of the feature flag to be removed
+2. Status (on\off)
 
 ## Entities
 
