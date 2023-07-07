@@ -1,6 +1,6 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { USER_LOCALSTORAGE_KEY } from '@/shared/const/localstorage';
-import { User, UserSchema } from '../types/user';
+import { UserSchema, User } from '../types/user';
 import { setFeatureFlags } from '@/shared/lib/features';
 import { saveJsonSettings } from '../services/saveJsonSettings';
 import { JsonSettings } from '../types/jsonSettings';
@@ -36,11 +36,9 @@ export const userSlice = createSlice({
     builder.addCase(
       initAuthData.fulfilled,
       (state, { payload }: PayloadAction<User>) => {
-        if (state.authData) {
-          state.authData = payload;
-          setFeatureFlags(payload.features);
-          state._inited = true;
-        }
+        state.authData = payload;
+        setFeatureFlags(payload.features);
+        state._inited = true;
       },
     );
     builder.addCase(initAuthData.rejected, (state) => {

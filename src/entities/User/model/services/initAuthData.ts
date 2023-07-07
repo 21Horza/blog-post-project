@@ -22,6 +22,7 @@ export const initAuthData = createAsyncThunk<User, void, ThunkConfig<string>>(
 
       return response;
     } catch (e) {
+      // eslint-disable-next-line no-console
       console.log(e);
       return rejectWithValue('');
     }
