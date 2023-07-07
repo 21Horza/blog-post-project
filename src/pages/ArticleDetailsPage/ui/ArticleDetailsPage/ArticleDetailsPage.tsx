@@ -11,7 +11,7 @@ import { articleDetailsPageReducer } from '../../model/slices';
 import cls from './ArticleDetailsPage.module.scss';
 import { ArticleDetailsPageHeader } from '../ArticleDetailsPageHeader/ArticleDetailsPageHeader';
 import { ArticleDetailsComments } from '../ArticleDetailsComments/ArticleDetailsComments';
-import { getFeatureFlags, toggleFeatures } from '@/shared/lib/features';
+import { ToggleFeatures, getFeatureFlags } from '@/shared/lib/features';
 import { ArticleRating } from '@/features/articleRating';
 import { Card } from '@/shared/ui/Card';
 import { Text } from '@/shared/ui/Text';
@@ -35,19 +35,17 @@ const ArticleDetailsPage = (props: ArticleDetailsPageProps) => {
     return null;
   }
 
-  const articleRatingCard = toggleFeatures({
-    name: 'isCounterEnabled',
-    on: () => <ArticleRating articleId={id} />,
-    off: () => <Card><Text text={t('Article rating will be available soon!')} /></Card>,
-  });
-
   return (
     <DynamicModuleLoader reducers={reducers} removeAfterUnmount>
       <Page className={classNames(cls.ArticleDetailsPage, {}, [className])}>
         <VStack gap="16" max>
           <ArticleDetailsPageHeader />
           <ArticleDetails id={id} />
-          {articleRatingCard}
+          <ToggleFeatures
+            feature="isArticleRatingEnabled"
+            on={<ArticleRating articleId={id} />}
+            off={<Card><Text text={t('Article rating will be available soon!')} /></Card>}
+          />
           <ArticleRecommendationsList />
           <ArticleDetailsComments id={id} />
         </VStack>

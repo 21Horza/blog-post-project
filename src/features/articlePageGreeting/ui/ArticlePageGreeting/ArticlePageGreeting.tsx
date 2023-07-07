@@ -14,7 +14,7 @@ export const ArticlePageGreeting = memo(() => {
   const dispatch = useAppDispatch();
 
   useEffect(() => {
-    if (isArticlePageOpen) {
+    if (!isArticlePageOpen) {
       setIsOpen(true);
       dispatch(saveJsonSettings({ isArticlePageOpen: true }));
     }
@@ -39,7 +39,7 @@ export const ArticlePageGreeting = memo(() => {
 
   return (
     <Modal
-      lazy isOpen={isOpen}
+      lazy isOpen={isOpen} onClose={onClose}
     >
       {text}
     </Modal>

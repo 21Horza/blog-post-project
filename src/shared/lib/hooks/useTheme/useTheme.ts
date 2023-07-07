@@ -29,7 +29,7 @@ export function useTheme(): UseThemeResult {
     setTheme?.(newTheme);
     saveAction?.(newTheme);
 
-    document.body.className = newTheme;
+    // document.body.className = newTheme;
   };
 
   return { theme: theme || Theme.LIGHT, toggleTheme };
