@@ -955,12 +955,13 @@
       "features": {
         "isArticleRatingEnabled": false,
         "isCounterEnebled": false,
-        "isAppRedesigned": true
+        "isAppRedesigned": false
       },
       "jsonSettings": {
         "theme": "app_dark_theme",
         "isFirstVisit": true,
-        "settingsPageHasBeenOpen": false
+        "settingsPageHasBeenOpen": false,
+        "isArticlePageOpen": true
       },
       "roles": [
         "USER"
