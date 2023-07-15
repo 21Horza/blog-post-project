@@ -29,6 +29,11 @@
   "Main": "Main",
   "Online magazine": "Online Magazine",
   "Page not found": "Page not found",
+  "Please, leave your feedback": {
+    " It will help us improve the quality of work": {
+      "": ""
+    }
+  },
   "Profile": "Profile",
   "Rate the article": "Rate the article",
   "Read more": "Read more",
@@ -46,5 +51,7 @@
   "You entered wrong login or password": "You entered wrong login or password",
   "Your feedback": "Your feedback",
   "decrement": "decrement",
-  "increment": "increment"
+  "increment": "increment",
+  "Оставьте свой отзыв о статье, это поможет улучшить качество": "Оставьте свой отзыв о статье, это поможет улучшить качество",
+  "Оцените статью": "Оцените статью"
 }

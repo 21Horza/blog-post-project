@@ -2,9 +2,9 @@ import { memo, useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useSelector } from 'react-redux';
 import { RatingCard } from '@/entities/Rating';
-import { useGetArticleRating, useRateArtilce } from '../api/articleRatingApi';
+import { useGetArticleRating, useRateArticle } from '../../api/articleRatingApi';
 import { getUserAuthData } from '@/entities/User';
-import { Skeleton } from '@/shared/ui/Skeleton';
+import { Skeleton } from '@/shared/ui/deprecated/Skeleton';
 
 export interface ArticleRatingProps {
     className?: string;
@@ -24,7 +24,7 @@ const ArticleRating = memo((props: ArticleRatingProps) => {
     userId: userData?.id ?? '',
   });
 
-  const [rateArticleMutation] = useRateArtilce();
+  const [rateArticleMutation] = useRateArticle();
 
   const rating = data?.[0];
 
@@ -61,7 +61,9 @@ const ArticleRating = memo((props: ArticleRatingProps) => {
       rate={rating?.rate}
       className={className}
       title={t('Rate the article')}
-      feedbackTitle={t('Give a feedback about the article, it will help us improve the quality of the work.')}
+      feedbackTitle={t(
+        'Please, leave your feedback. It will help us improve the quality of work.',
+      )}
       hasFeedback
     />
   );
