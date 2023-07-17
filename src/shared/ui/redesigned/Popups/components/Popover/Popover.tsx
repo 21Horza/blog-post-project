@@ -20,7 +20,7 @@ export function Popover(props: PopoverProps) {
     children,
     direction = 'bottom right',
   } = props;
-  const menuClasses = [mapDirectionClass[direction]];
+  const menuClasses = [mapDirectionClass[direction], popupCls.menu];
   return (
     <HPopover className={classNames(cls.Popover, {}, [className, popupCls.Popup])}>
       <HPopover.Button as="div" className={popupCls.trigger}>{trigger}</HPopover.Button>

@@ -44,10 +44,6 @@ const justifyClasses: Record<FlexJustify, string> = {
   between: cls.justifyBetween,
 };
 
-/**
- * Outdated, use new components from redesigned folder
- * @deprecated
- */
 export const Flex = (props: FlexProps) => {
   const {
     className,
