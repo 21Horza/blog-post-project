@@ -16,6 +16,7 @@
   "Enter username": "Введите логин",
   "Error occured": "Произошла ошибка",
   "Failed to load articles": "Не удалось прогрузить статьи",
+  "Failed to load the profile": "Failed to load the profile",
   "Give a feedback about the article, it will help us improve the quality of the work": "Оставьте отзыв о статье, это поможет нам улучшить качество работы",
   "Go back to the list": "Обратно к списку",
   "Here you can read the articles on different topics": "Здесь вы можете прочитать статьи на различные темы",
@@ -46,6 +47,7 @@
   "There are no comments": "Комментов нет",
   "Throw Error": "Вывести ошибку",
   "Toggle": "Переключить",
+  "Try to refresh the page": "Try to refresh the page",
   "Unexpected Error Occurred": "Произошла непредвиденная ошибка",
   "Welcome to the articles page!": "Добро пожаловать на страницу со статьями!",
   "You entered wrong login or password": "Вы ввели еправильный логин или пароль",
@@ -54,6 +56,8 @@
   "increment": "уменьшить",
   "Оставьте свой отзыв о статье, это поможет улучшить качество": "Оставьте свой отзыв о статье, это поможет улучшить качество",
   "Оцените статью": "Оцените статью",
-  "Поиск": "Поиск"
+  "Поиск": "Поиск",
+  "Попробуйте обновить страницу": "Попробуйте обновить страницу",
+  "Произошла ошибка при загрузке профиля": "Произошла ошибка при загрузке профиля"
 }
   

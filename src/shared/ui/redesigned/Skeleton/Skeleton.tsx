@@ -9,10 +9,6 @@ interface SkeletonProps {
     border?: string | number;
 }
 
-/**
- * Outdated, use new components from redesigned folder
- * @deprecated
- */
 export const Skeleton = memo((props: SkeletonProps) => {
   const {
     className,

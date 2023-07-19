@@ -1,5 +1,6 @@
 {
   "Age": "Age",
+  "Avata link": "Avata link",
   "Avatar link": "Avatar link",
   "Cancel": "Cancel",
   "City": "City",
@@ -11,6 +12,7 @@
   "Name": "Name",
   "No data": "No data",
   "Profile": "Profile",
+  "Profile not found": "Profile not found",
   "Refresh the page": "Refresh the page",
   "Save": "Save",
   "Server error": "Server error",
@@ -18,8 +20,5 @@
   "Set currency": "Set currency",
   "Set value": "Choose a currency",
   "Surname": "Surname",
-  "Username": "Username",
-  "profile": {
-    "Profile not found": "Profile not found"
-  }
+  "Username": "Username"
 }

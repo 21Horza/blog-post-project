@@ -15,6 +15,7 @@
   "Enter password": "Enter password",
   "Enter username": "Enter username",
   "Failed to load articles": "Failed to load articles",
+  "Failed to load the profile": "Failed to load the profile",
   "Give a feedback about the article, it will help us improve the quality of the work": {
     "": "Give a feedback about the article, it will help us improve the quality of the work"
   },
@@ -47,6 +48,7 @@
   "There are no comments": "There are no comments",
   "Throw Error": "Throw Error",
   "Toggle": "Toggle",
+  "Try to refresh the page": "Try to refresh the page",
   "Unexpected Error Occurred": "Unexpected Error Occurred",
   "Welcome to the articles page!": "Welcome to the articles page!",
   "You entered wrong login or password": "You entered wrong login or password",
@@ -55,5 +57,7 @@
   "increment": "increment",
   "Оставьте свой отзыв о статье, это поможет улучшить качество": "Оставьте свой отзыв о статье, это поможет улучшить качество",
   "Оцените статью": "Оцените статью",
-  "Поиск": "Поиск"
+  "Поиск": "Поиск",
+  "Попробуйте обновить страницу": "Попробуйте обновить страницу",
+  "Произошла ошибка при загрузке профиля": "Произошла ошибка при загрузке профиля"
 }
