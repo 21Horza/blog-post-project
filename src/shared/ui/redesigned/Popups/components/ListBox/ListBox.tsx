@@ -7,6 +7,8 @@ import { Button } from '../../../Button/Button';
 import { HStack } from '../../../Stack';
 import { mapDirectionClass } from '../../styles/consts';
 import popupCls from '../../styles/Popup.module.scss';
+import ArrowIcon from '@/shared/assets/icons/arrow-bottom.svg';
+import { Icon } from '../../../Icon';
 
 export interface ListBoxItem<T extends string> {
     value: string;
@@ -62,6 +64,7 @@ export function ListBox<T extends string>(props: ListBoxProps<T>) {
           className={cls.trigger}
         >
           <Button
+            addonRight={<Icon Svg={ArrowIcon} />}
             variant="filled"
             disabled={readonly}
           >

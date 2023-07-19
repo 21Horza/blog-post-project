@@ -11,7 +11,7 @@ export type ButtonSize = 'm' | 'l' | 'xl';
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement>{
     className?: string;
     /**
-     * Button theme. Responsible for visual (in frame, without styles, reverted color for project theme and so on)
+     * Button variant. Responsible for visual (in frame, without styles, reverted color for project theme and so on)
      */
     variant?: ButtonVariant;
     /**
@@ -34,6 +34,8 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement>{
      * Makes button with full width
      */
     fullWidth?: boolean;
+    addonLeft?: ReactNode;
+    addonRight?: ReactNode;
 }
 
 export const Button = memo((props: ButtonProps) => {
@@ -45,6 +47,8 @@ export const Button = memo((props: ButtonProps) => {
     size = 'm',
     disabled,
     fullWidth,
+    addonLeft,
+    addonRight,
     ...otherProps
   } = props;
 
@@ -52,6 +56,7 @@ export const Button = memo((props: ButtonProps) => {
     [cls.square]: square,
     [cls.disabled]: disabled,
     [cls.fullWidth]: fullWidth,
+    [cls.withAddon]: Boolean(addonLeft) || Boolean(addonRight),
   };
 
   return (
@@ -62,7 +67,9 @@ export const Button = memo((props: ButtonProps) => {
             // eslint-disable-next-line react/jsx-props-no-spreading
       {...otherProps}
     >
+      <div className={cls.addonLeft}>{addonLeft}</div>
       {children}
+      <div className={cls.addonRight}>{addonRight}</div>
     </button>
   );
 });
