@@ -1,6 +1,5 @@
 import { FeatureFlags } from '@/shared/types/featureFlags';
 
-// FEATURES DON'T CHANGE DURING A SESSION, NO NEED TO MAKE THEM REACTIVE!!!
 let featureFlags: FeatureFlags = {};
 
 export function setFeatureFlags(newFeatureFlags?: FeatureFlags) {
@@ -9,6 +8,10 @@ export function setFeatureFlags(newFeatureFlags?: FeatureFlags) {
   }
 }
 
-export function getFeatureFlags(flag: keyof FeatureFlags) {
+export function getFeatureFlag(flag: keyof FeatureFlags) {
   return featureFlags[flag];
+}
+
+export function getAllFeatureFlags() {
+  return featureFlags;
 }
