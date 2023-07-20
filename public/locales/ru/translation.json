@@ -36,7 +36,14 @@
   },
   "Profile": "Профиль",
   "Rate the article": "Читать статью",
-  "Read more ...": "Читать далее ...",
+  "Read more": "Читать далее",
+  "Read more ": {
+    "": {
+      "": {
+        "": ""
+      }
+    }
+  },
   "Recommendations": "Рекомендации",
   "Refresh page": "Обновить страницу",
   "Refresh the page": "Обновить страницу",

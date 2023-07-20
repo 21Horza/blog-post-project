@@ -37,7 +37,14 @@
   },
   "Profile": "Profile",
   "Rate the article": "Rate the article",
-  "Read more ...": "Read more ...",
+  "Read more": "Read more",
+  "Read more ": {
+    "": {
+      "": {
+        "": ""
+      }
+    }
+  },
   "Recommendations": "Recommendations",
   "Refresh page": "Refresh page",
   "Refresh the page": "Refresh the page",
