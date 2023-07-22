@@ -1,7 +1,14 @@
+import { LOCAL_STORAGE_LAST_DESIGN_KEY } from '@/shared/const/localstorage';
 import { FeatureFlags } from '@/shared/types/featureFlags';
 
+const defaultFeatures: FeatureFlags = {
+  isAppRedesigned: localStorage.getItem(LOCAL_STORAGE_LAST_DESIGN_KEY) === 'new',
+};
+
 // FEATURES DON'T CHANGE DURING SESSION, THEY HAS TO BE MADE REACTIVE!!!
-let featureFlags: FeatureFlags = {};
+let featureFlags: FeatureFlags = {
+  ...defaultFeatures,
+};
 
 // context
 // state
