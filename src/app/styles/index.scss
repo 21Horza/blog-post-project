@@ -23,17 +23,31 @@
 }
 
 *::-webkit-scrollbar {
-    width: 12px;
+    width: 12px;               /* scrollbar width */
     height: 8px;
 }
 
 *::-webkit-scrollbar-track {
-    margin-left: 10px;
-    background: var(--code-bg);
+    background: var(--light-bg-redesigned);        /* thumb color */
 }
 
 *::-webkit-scrollbar-thumb {
-    background-color: var(--inverted-primary-color);
-    border-radius: 20px;
-    border: 2px solid (--primary-color);
+    background-color: var(--icon-redesigned);    /* thumb color */
+    border-radius: 20px;       /* thumb radius */
+    border: 1px solid var(--accent-redesigned);  /* padding around thumb */
+}
+
+.app *::-webkit-scrollbar {
+    width: 12px;               /* scrollbar width */
+    height: 8px;
+}
+
+.app *::-webkit-scrollbar-track {
+    background: var(--card-bg);        /* track color */
+}
+
+.app *::-webkit-scrollbar-thumb {
+    background-color: var(--inverted-primary-color);    /* thumb color */
+    border-radius: 20px;       /* thumb radius */
+    border: 2px solid var(--primary-color);  /* padding around thumb */
 }
