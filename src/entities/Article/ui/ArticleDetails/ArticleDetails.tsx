@@ -20,7 +20,7 @@ import { articleDetailsReducer } from '../../model/slice/articleDetailsSlice';
 import cls from './ArticleDetails.module.scss';
 import { Avatar as AvatarDeprecated } from '@/shared/ui/deprecated/Avatar';
 import { renderArticleBlock } from './renderBlock';
-import { ToggleFeatures } from '@/shared/lib/features';
+import { ToggleFeatures, toggleFeatures } from '@/shared/lib/features';
 import { AppImage } from '@/shared/ui/redesigned/AppImage';
 import { Skeleton as SkeletonDeprecated } from '@/shared/ui/deprecated/Skeleton';
 import { Skeleton as SkeletonRedesigned } from '@/shared/ui/redesigned/Skeleton';
@@ -90,6 +90,23 @@ const Redesigned = () => {
   );
 };
 
+export const ArticleDetailsSkeleton = () => {
+  const Skeleton = toggleFeatures({
+    name: 'isAppRedesigned',
+    on: () => SkeletonRedesigned,
+    off: () => SkeletonDeprecated,
+  });
+  return (
+    <VStack gap="16" max>
+      <Skeleton className={cls.avatar} width={200} height={200} border="50%" />
+      <Skeleton className={cls.title} width={300} height={32} />
+      <Skeleton className={cls.skeleton} width={600} height={24} />
+      <Skeleton className={cls.skeleton} height={200} width="100%" />
+      <Skeleton className={cls.skeleton} height={200} width="100%" />
+    </VStack>
+  );
+};
+
 export const ArticleDetails = memo((props: ArticleDetailsProps) => {
   const { className, id } = props;
 
@@ -107,15 +124,7 @@ export const ArticleDetails = memo((props: ArticleDetailsProps) => {
   let content;
 
   if (isLoading) {
-    content = (
-      <>
-        <SkeletonDeprecated className={cls.avatar} width={200} height={200} border="50%" />
-        <SkeletonDeprecated className={cls.title} width={300} height={32} />
-        <SkeletonDeprecated className={cls.skeleton} width={600} height={24} />
-        <SkeletonDeprecated className={cls.skeleton} height={200} width="100%" />
-        <SkeletonDeprecated className={cls.skeleton} height={200} width="100%" />
-      </>
-    );
+    content = <ArticleDetailsSkeleton />;
   } else if (error) {
     content = (
       <TextDeprecated align={TextAlign.CENTER} title={t('Failed to load the page')} />

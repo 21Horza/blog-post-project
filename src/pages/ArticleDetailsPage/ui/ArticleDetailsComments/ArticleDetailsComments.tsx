@@ -2,7 +2,8 @@ import { memo, useCallback, Suspense } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useSelector } from 'react-redux';
 import { classNames } from '@/shared/lib/classNames/classNames';
-import { Text, TextSize } from '@/shared/ui/deprecated/Text';
+import { Text as TextDeprecated, TextSize } from '@/shared/ui/deprecated/Text';
+import { Text } from '@/shared/ui/redesigned/Text';
 import { AddCommentForm } from '@/features/addCommentForm';
 import { CommentList } from '@/entities/Comment';
 import { useInitialEffect } from '@/shared/lib/hooks/useInitialEffect/useInitialEffect';
@@ -13,6 +14,7 @@ import { getArticleCommentsIsLoading } from '../../model/selectors/comments';
 import { getArticleComments } from '../../model/slices/articleDetailsCommentSlice';
 import { fetchCommentsByArticleId } from '../../model/services/fetchCommentsByArticleId/fetchCommentsByArticleId';
 import { useAppDispatch } from '@/shared/lib/hooks/useAppDispatch/useAppDispatch';
+import { ToggleFeatures } from '@/shared/lib/features';
 
 interface ArticleDetailsCommentsProps {
     className?: string;
@@ -39,9 +41,20 @@ export const ArticleDetailsComments = memo((props: ArticleDetailsCommentsProps) 
   }, [dispatch]);
   return (
     <VStack gap="16" max className={classNames('', {}, [className])}>
-      <Text
-        size={TextSize.L}
-        title={t('Comments')}
+      <ToggleFeatures
+        feature="isAppRedesigned"
+        on={(
+          <Text
+            size="l"
+            title={t('Comments')}
+          />
+        )}
+        off={(
+          <TextDeprecated
+            size={TextSize.L}
+            title={t('Comments')}
+          />
+        )}
       />
       <Suspense fallback={<Loader />}>
         <AddCommentForm onSendComment={onSendComment} />

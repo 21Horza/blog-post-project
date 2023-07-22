@@ -62,6 +62,7 @@
   "Throw Error": "Throw Error",
   "Toggle": "Toggle",
   "Try to refresh the page": "Try to refresh the page",
+  "Ulbi TV App": "Ulbi TV App",
   "Unexpected Error Occurred": "Unexpected Error Occurred",
   "User settings": "User settings",
   "Welcome to the articles page!": "Welcome to the articles page!",
@@ -72,11 +73,13 @@
   "views": "views",
   "{{count}} views": "{{count}} views",
   "{{count}} views_plural": "{{count}} views_plural",
+  "Войти": "Войти",
   "Оставьте свой отзыв о статье, это поможет улучшить качество": "Оставьте свой отзыв о статье, это поможет улучшить качество",
   "Оцените статью": "Оцените статью",
   "Поиск": "Поиск",
   "Попробуйте обновить страницу": "Попробуйте обновить страницу",
   "Произошла ошибка при загрузке профиля": "Произошла ошибка при загрузке профиля",
+  "Создать статью": "Создать статью",
   "Читать далее": {
     "": {
       "": {
