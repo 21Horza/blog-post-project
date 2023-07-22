@@ -1,7 +1,12 @@
 import { FeatureFlags } from '@/shared/types/featureFlags';
 
+// FEATURES DON'T CHANGE DURING SESSION, THEY HAS TO BE MADE REACTIVE!!!
 let featureFlags: FeatureFlags = {};
 
+// context
+// state
+// reload pgae
+// crutch
 export function setFeatureFlags(newFeatureFlags?: FeatureFlags) {
   if (newFeatureFlags) {
     featureFlags = newFeatureFlags;
