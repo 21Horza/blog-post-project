@@ -22,6 +22,8 @@
   "Enter username": "Enter username",
   "Error occured": "Error occured",
   "Failed to load articles": "Failed to load articles",
+  "Failed to load the page": "",
+  "Failed to load the profile": "",
   "Give a feedback about the article, it will help us improve the quality of the work": {
     "": ""
   },
@@ -46,11 +48,23 @@
   "Order by": "Order by",
   "PROFILE PAGE": "PROFILE PAGE",
   "Page not found": "Page not found",
+  "Please, leave your feedback": {
+    " It will help us improve the quality of work": {
+      "": ""
+    }
+  },
   "Politics": "Politics",
   "Profile": "Profile",
   "Profile not found": "Profile not found",
   "Rate the article": "Rate the article",
   "Read more": "",
+  "Read more ": {
+    "": {
+      "": {
+        "": ""
+      }
+    }
+  },
   "Recommendations": "Recommendations",
   "Refresh page": "Refresh page",
   "Refresh the page": "Refresh the page",
@@ -62,6 +76,7 @@
   "Set country": "",
   "Set currency": "Set currency",
   "Set value": "",
+  "Settings": "",
   "Short lang": "",
   "Sort by": "Sort by",
   "Surname": "Surname",
@@ -69,6 +84,8 @@
   "There are no comments": "There are no comments",
   "Throw Error": "Throw Error",
   "Toggle": "Toggle",
+  "Try to refresh the page": "",
+  "Ulbi TV App": "",
   "Unexpected Error Occurred": "Unexpected Error Occurred",
   "User profile": "",
   "Username": "Username",
@@ -90,6 +107,8 @@
   "issue date": "issue date",
   "title": "title",
   "views": "views",
+  "{{count}} views": "",
+  "{{count}} views_plural": "",
   "Главная страница": "Главная страница",
   "О сайте": "О сайте",
   "Укажите страну": ""

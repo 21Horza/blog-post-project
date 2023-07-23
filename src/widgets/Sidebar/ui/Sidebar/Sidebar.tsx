@@ -1,6 +1,6 @@
 import { memo, useMemo, useState } from 'react';
 import { useSelector } from 'react-redux';
-import { Button, ButtonSize, ButtonTheme } from '@/shared/ui/deprecated/Button';
+import { Button as ButtonDeprecated, ButtonSize, ButtonTheme } from '@/shared/ui/deprecated/Button';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import { ThemeSwitcher } from '@/features/ThemeSwitcher';
 import { VStack } from '@/shared/ui/redesigned/Stack';
@@ -37,7 +37,6 @@ export const Sidebar = memo(({ className }: SidebarProps) => {
       feature="isAppRedesigned"
       on={(
         <aside
-          data-testid="sidebar"
           className={classNames(cls.SidebarRedesigned, { [cls.collapsedRedesigned]: collapsed }, [className])}
         >
           <AppLogo size={collapsed ? 30 : 50} className={cls.appLogo} />
@@ -45,7 +44,6 @@ export const Sidebar = memo(({ className }: SidebarProps) => {
             {itemsList}
           </VStack>
           <Icon
-            data-testid="sidebar-toggle"
             onClick={onToggle}
             className={cls.collapseBtn}
             Svg={ArrowIcon}
@@ -65,7 +63,7 @@ export const Sidebar = memo(({ className }: SidebarProps) => {
           data-testid="sidebar"
           className={classNames(cls.Sidebar, { [cls.collapsed]: collapsed }, [className])}
         >
-          <Button
+          <ButtonDeprecated
             data-testid="sidebar-toggle"
             onClick={onToggle}
             className={cls.collapseBtn}
@@ -74,7 +72,7 @@ export const Sidebar = memo(({ className }: SidebarProps) => {
             square
           >
             {collapsed ? '>' : '<'}
-          </Button>
+          </ButtonDeprecated>
           <VStack role="navigation" gap="16" className={cls.items}>
             {itemsList}
           </VStack>
